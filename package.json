@@ -9,6 +9,8 @@
     "gulp": "gulp",
     "prestart": "npm install",
     "build": "npm install && gulp",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "gulp --dev",
     "test": "npm run build"
   },
@@ -36,6 +38,7 @@
     "browser-sync": "^2",
     "del": "^2",
     "fabricator-assemble": "^1.1.10",
+    "gh-pages": "^0.10.0",
     "gulp": "^3",
     "gulp-autoprefixer": "^3",
     "gulp-csso": "^1",
