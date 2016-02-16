@@ -2,19 +2,27 @@
 
 // modules
 var assemble = require('fabricator-assemble');
+var atImport = require('postcss-easy-import');
 var browserSync = require('browser-sync');
+var cssMQPacker = require('css-mqpacker');
+var cssnano = require('cssnano');
 var csso = require('gulp-csso');
 var del = require('del');
+var fontMagician = require('postcss-font-magician');
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var gulpif = require('gulp-if');
 var imagemin = require('gulp-imagemin');
+var postcss	= require('gulp-postcss');
+var precss = require('precss');
 var prefix = require('gulp-autoprefixer');
 var rename = require('gulp-rename');
 var reload = browserSync.reload;
 var runSequence = require('run-sequence');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
+var suit = require('postcss-bem');
+var syntax = require('postcss-scss');
 var webpack = require('webpack');
 
 
@@ -62,14 +70,32 @@ gulp.task('styles:fabricator', function () {
 });
 
 gulp.task('styles:toolkit', function () {
-	gulp.src(config.src.styles.toolkit)
-		.pipe(gulpif(config.dev, sourcemaps.init()))
-		.pipe(sass().on('error', sass.logError))
-		.pipe(prefix('last 1 version'))
-		.pipe(gulpif(!config.dev, csso()))
-		.pipe(gulpif(config.dev, sourcemaps.write()))
-		.pipe(gulp.dest(config.dest + '/assets/toolkit/styles'))
-		.pipe(gulpif(config.dev, reload({stream:true})));
+
+		var preprocessors = [
+			atImport({
+				prefix: '_',
+				extensions: ['.scss','.css']
+			})
+		];
+
+		var postprocessors = [
+			cssMQPacker,
+			cssnano,
+			fontMagician,
+			prefix,
+		 	precss,
+			suit
+		];
+
+    return gulp.src(config.src.styles.toolkit)
+				.pipe(gulpif(config.dev, sourcemaps.init()))
+				.pipe(postcss(preprocessors,{syntax: syntax}))
+				.pipe(sass().on('error', sass.logError))
+				.pipe(postcss(postprocessors, {syntax: syntax}))
+				.pipe(gulpif(!config.dev, csso()))
+				.pipe(gulpif(config.dev, sourcemaps.write()))
+				.pipe(gulp.dest(config.dest + '/assets/toolkit/styles'))
+				.pipe(gulpif(config.dev, reload({stream:true})));
 });
 
 gulp.task('styles', ['styles:fabricator', 'styles:toolkit']);
