@@ -21,7 +21,7 @@ var reload = browserSync.reload;
 var runSequence = require('run-sequence');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
-var suit = require('postcss-bem');
+var suitAtRules = require('postcss-bem');
 var syntax = require('postcss-scss');
 var webpack = require('webpack');
 
@@ -84,14 +84,14 @@ gulp.task('styles:toolkit', function () {
 			fontMagician,
 			prefix,
 		 	precss,
-			suit
+			suitAtRules
 		];
 
     return gulp.src(config.src.styles.toolkit)
 				.pipe(gulpif(config.dev, sourcemaps.init()))
 				.pipe(postcss(preprocessors,{syntax: syntax}))
 				.pipe(sass().on('error', sass.logError))
-				.pipe(postcss(postprocessors, {syntax: syntax}))
+				.pipe(postcss(postprocessors))
 				.pipe(gulpif(!config.dev, csso()))
 				.pipe(gulpif(config.dev, sourcemaps.write()))
 				.pipe(gulp.dest(config.dest + '/assets/toolkit/styles'))
