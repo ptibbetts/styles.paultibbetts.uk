@@ -75,7 +75,8 @@ gulp.task('styles:toolkit', function () {
 			atImport({
 				prefix: '_',
 				extensions: ['.scss','.css']
-			})
+			}),
+			suit
 		];
 
 		var postprocessors = [
@@ -83,8 +84,7 @@ gulp.task('styles:toolkit', function () {
 			cssnano,
 			fontMagician,
 			prefix,
-		 	precss,
-			suit
+		 	precss
 		];
 
     return gulp.src(config.src.styles.toolkit)
