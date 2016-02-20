@@ -16,6 +16,7 @@ var imagemin = require('gulp-imagemin');
 var postcss	= require('gulp-postcss');
 var precss = require('precss');
 var prefix = require('gulp-autoprefixer');
+var reporter = require('postcss-reporter');
 var rename = require('gulp-rename');
 var reload = browserSync.reload;
 var runSequence = require('run-sequence');
@@ -75,7 +76,8 @@ gulp.task('styles:toolkit', function () {
 			atImport({
 				prefix: '_',
 				extensions: ['.scss','.css']
-			})
+			}),
+			reporter
 		];
 
 		var postprocessors = [
@@ -84,7 +86,8 @@ gulp.task('styles:toolkit', function () {
 			fontMagician,
 			prefix,
 		 	precss,
-			suitAtRules
+			suitAtRules,
+			reporter
 		];
 
     return gulp.src(config.src.styles.toolkit)
