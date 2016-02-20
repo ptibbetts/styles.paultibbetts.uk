@@ -2,7 +2,13 @@
  * Toolkit styles
  */
 
+@import 'settings/colours';
+@import 'settings/typography';
 
-body {
-	font-family: sans-serif;
-}
+@import 'elements/body';
+@import 'elements/links';
+
+@import 'components/Logo';
+@import 'components/Navigation';
+@import 'components/Brand';
+@import 'components/Header';

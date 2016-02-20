@@ -1,0 +1,16 @@
+.Header {
+  display: flex;
+  align-items: center;
+
+  background: rgba( $white, 0.75);
+
+  .Logo {
+    min-width: 5rem;
+  }
+
+  .Navigation {
+    margin-left: auto;
+    text-align: right;
+  }
+
+}
