@@ -77,6 +77,7 @@ gulp.task('styles:toolkit', function () {
 				prefix: '_',
 				extensions: ['.scss','.css']
 			}),
+			suitAtRules,
 			reporter
 		];
 
@@ -86,7 +87,6 @@ gulp.task('styles:toolkit', function () {
 			fontMagician,
 			prefix,
 		 	precss,
-			suitAtRules,
 			reporter
 		];
 
