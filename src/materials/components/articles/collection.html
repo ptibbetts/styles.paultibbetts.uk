@@ -1,0 +1,11 @@
+{{#each toolkit.articles}}
+
+	<h3>{{@key}}</h3>
+
+	{{#each this}}
+		<div>
+			{{> articles.teaser link-text=this }}
+		</div>
+	{{/each}}
+
+{{/each}}

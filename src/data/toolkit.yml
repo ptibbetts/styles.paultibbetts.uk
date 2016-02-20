@@ -13,3 +13,9 @@ navigation:
   links: "Links"
   about: "About"
   contact: "Contact"
+list:
+  item: "1"
+articles:
+  2016:
+    - "Got my blog online"
+    - "Second blog post"

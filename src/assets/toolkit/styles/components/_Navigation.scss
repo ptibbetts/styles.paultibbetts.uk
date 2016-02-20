@@ -12,10 +12,6 @@
 			position: relative;
 			text-transform: uppercase;
 
-			&:hover {
-				text-decoration: underline;
-			}
-
 			&:not(:last-child):after {
 				color: lighten($black, 75);
 				content : ',';
