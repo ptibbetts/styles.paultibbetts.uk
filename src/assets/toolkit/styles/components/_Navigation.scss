@@ -1,9 +1,11 @@
 @component Navigation {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 
 	@descendent list {
 		list-style-type: none;
+		padding-left: 0;
 
 		@descendent item {
 			display: inline-block;

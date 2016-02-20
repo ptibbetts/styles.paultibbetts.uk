@@ -1,14 +1,19 @@
 .Header {
-  display: flex;
-  align-items: center;
 
   background: rgba( $white, 0.75);
 
-  .Logo {
-    min-width: 5rem;
+  .container {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+  }
+
+  .Brand {
+    flex: 1;
   }
 
   .Navigation {
+      flex: 1;
     margin-left: auto;
     text-align: right;
   }
