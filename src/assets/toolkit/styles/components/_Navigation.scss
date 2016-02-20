@@ -1,0 +1,32 @@
+@component Navigation {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	@descendent list {
+		list-style-type: none;
+		padding-left: 0;
+
+		@descendent item {
+			display: inline-block;
+			padding-left: 0.5em;
+			padding-right: 0.5em;
+			position: relative;
+			text-transform: uppercase;
+
+			&:not(:last-child):after {
+				color: lighten($black, 75);
+				content : ',';
+				position: absolute;
+				text-shadow: 1px 1px rgba(red, 0.15);
+			}
+
+		}
+
+	}
+
+	@descendent link {
+		text-decoration: none;
+	}
+
+}

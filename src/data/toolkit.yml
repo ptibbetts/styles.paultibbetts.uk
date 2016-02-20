@@ -6,3 +6,16 @@ colors:
     Red: "rgb(201, 55, 6)"
     Yellow: "rgb(252, 207, 80)"
     Blue: "rgb(39, 102, 143)"
+display-pic: "https://secure.gravatar.com/avatar/36790fabdc80d52c19e45c2df8acb55a"
+navigation:
+  articles: "Articles"
+  notes: "Notes"
+  links: "Links"
+  about: "About"
+  contact: "Contact"
+list:
+  item: "1"
+articles:
+  2016:
+    - "Got my blog online"
+    - "Second blog post"
