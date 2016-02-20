@@ -142,6 +142,11 @@ gulp.task('cname', function () {
 // assemble
 gulp.task('assemble', function (done) {
 	assemble({
+		helpers: {
+			default: function (value, defaultValue) {
+	      return value ? value : defaultValue;
+	    }
+		},
 		logErrors: config.dev
 	});
 	done();
