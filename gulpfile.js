@@ -138,15 +138,19 @@ gulp.task('cname', function () {
 		.pipe(gulp.dest(config.dest));
 });
 
+var handlebarHelpers = {
+	default: function (value, defaultValue) {
+		return value ? value : defaultValue;
+	},
+	capitalise: function (value) {
+			return value.charAt(0).toUpperCase() + value.slice(1);
+	}
+}
 
 // assemble
 gulp.task('assemble', function (done) {
 	assemble({
-		helpers: {
-			default: function (value, defaultValue) {
-	      return value ? value : defaultValue;
-	    }
-		},
+		helpers: handlebarHelpers,
 		logErrors: config.dev
 	});
 	done();
