@@ -84,7 +84,6 @@ gulp.task('styles:toolkit', function () {
 		var postprocessors = [
 			cssMQPacker,
 			cssnano,
-			fontMagician,
 			prefix,
 		 	precss,
 			reporter
