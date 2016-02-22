@@ -1,0 +1,13 @@
+{{#each toolkit.notes.all}}
+
+	<h3>{{capitalise @key}}</h3>
+
+	<ul class="Notes-list list-of-links">
+		{{#each this}}
+			<li class="Notes-list-item">
+				{{> notes.teaser text=this.text tags=this.tags when=this.time}}
+			</li>
+		{{/each}}
+	</ul>
+
+{{/each}}

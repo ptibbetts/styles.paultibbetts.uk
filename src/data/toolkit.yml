@@ -16,9 +16,159 @@ navigation:
   links: "Links"
   about: "About"
   contact: "Contact"
-list:
-  item: "1"
 articles:
-  2016:
-    - "Got my blog online"
-    - "Second blog post"
+  recent:
+      one:
+        text: "A Modern WordPress Workflow"
+        tags: ["wordpress"]
+        time: "2 days ago"
+      two:
+        text: "Laravel Birmingham"
+        tags: ["laravel birmingham", "laravel", "meetup"]
+        time: "3 days ago"
+      three:
+        text: "Homebrew Website Club Birmingham"
+        tags: ["hbwcb", "meetup"]
+        time: "about 1 week ago"
+      four:
+        text: "Now online at paultibbetts.uk"
+        tags: ["personal"]
+        time: "about 2 weeks ago"
+      five:
+        text: "Personal Reboot"
+        tags: ["personal"]
+        time: "about 2 weeks ago"
+  all:
+    seventeen:
+      year: "2017"
+      posts:
+        one:
+          text: "A Modern WordPress Workflow"
+          tags: ["wordpress"]
+        two:
+          text: "Laravel Birmingham"
+          tags: ["laravel", "laravel birmingham", "meetup"]
+        three:
+          text: "Homebrew Website Club Birmingham"
+          tags: ["hbwcb", "meetup"]
+          time: "about 3 weeks ago"
+        four:
+          text: "Now online at paultibbetts.uk"
+          tags: ["personal"]
+        five:
+          text: "Personal Reboot"
+          tags: ["personal"]
+    sixteen:
+      year: "2016"
+      posts:
+        one:
+          text: "A Modern WordPress Workflow"
+          tags: ["wordpress"]
+          time: "20/09/2016"
+        two:
+          text: "Laravel Birmingham"
+          tags: ["laravel", "laravel birmingham", "meetup"]
+          time: "16/05/2016"
+        three:
+          text: "Homebrew Website Club Birmingham"
+          tags: ["hbwcb", "meetup"]
+          time: "04/04/2016"
+        four:
+          text: "Now online at paultibbetts.uk"
+          tags: ["personal"]
+          time: "07/03/2016"
+        five:
+          text: "Personal Reboot"
+          tags: ["personal"]
+          time: "01/01/1970"
+notes:
+  recent:
+    one:
+      text: "Ready for the @GatherContent webinar"
+      time: "12 minutes ago"
+    two:
+      text: "#Firefox disables Flash by default"
+      tags: ["firefox", "flash"]
+      time: "about 24 hours ago"
+    three:
+      text: "Thoroughly enjoyed @indiewebcamp Brighton. Massive thank you to @adactio and @lottejackson for hosting it and everyone else for taking part"
+      tags: ["indieweb"]
+      time: "12/06/15"
+    four:
+      text: "I'm liking the Fleet Street Food Feast-ival. It's almost Digbeth Dining Club for the JQ"
+      time: "11/05/15"
+    five:
+      text: "RT If you're interested in #Laravel Dev why not pop along to the Birmingham Laravel meetup this evening @thebluecube HQ meetup.com/Laravel-Birm…"
+      tags: ["laravel birmingham", "meetup", "laravel"]
+      time: "10/05/15"
+  all:
+    february 2016:
+      one:
+        text: "Ready for the @GatherContent webinar"
+        time: "12/02/2016"
+    july 2015:
+      one:
+        text: "Thoroughly enjoyed @indiewebcamp Brighton. Massive thank you to @adactio and @lottejackson for hosting it and everyone else for taking part"
+        tags: ["indieweb", "indiewebcamp"]
+        time: "13/07/15"
+      two:
+        text: "I'm liking the Fleet Street Food Feast-ival. It's almost Digbeth Dining Club for the JQ"
+        time: "10/07/15"
+    june 2015:
+      one:
+        text: "RT If you're interested in #Laravel Dev why not pop along to the Birmingham Laravel meetup this evening @thebluecube HQ meetup.com/Laravel-Birm…"
+        tags: ["laravel birmingham", "laravel", "meetup"]
+        time: "24/06/15"
+      two:
+        text: "I'm trying to record some demos for a client, any recommendations for a #screencast app for Mac?"
+        tags: ["screencast"]
+        time: "09/06/15"
+    may 2015:
+      one:
+        text: "Fashionably late for the Birmingham.io Anniversary party"
+        time: "30/05/15"
+links:
+  recent:
+    one:
+      text: "Cosmic Ordering"
+      time: "42 minutes ago"
+    two:
+      text: "Make a $10k WordPress site in 3 hours"
+      tags: ["wordpress", "tutorial"]
+      time: "about 3 hours ago"
+    three:
+      text: "Insanely complete Ansible playbook, showing off all the options"
+      tags: ["ansible","devops"]
+      time: "about 2 days ago"
+    four:
+      text: "JavaScript for WordPress Master Course"
+      tags: ["javascript", "wordpress", "tutorial"]
+      time: "about 1 week ago"
+    five:
+      text: "Paul Graham on Doing Things Right by Accident"
+      time: "about 2 weeks ago"
+  all:
+    february 2016:
+      one:
+        text: "Cosmic ordering"
+        time: "14/02/2016"
+    january 2016:
+      one:
+        text: "Make a $10k WordPress site in 3 hours"
+        tags: ["wordpress", "tutorial"]
+        time: "10/01/16"
+      two:
+        text: "Insanely complete Ansible playbook, showing off all the options"
+        time: "06/01/16"
+    december 2015:
+      one:
+        text: "JavaScript for WordPress Master Course"
+        tags: ["javascript", "wordpress", "course"]
+        time: "24/12/15"
+      two:
+        text: "Paul Graham on Doing Things Right by Accident"
+        time: "12/12/15"
+    november 2015:
+      one:
+        text: "PostCSS Deep Dive"
+        time: "21/11/15"

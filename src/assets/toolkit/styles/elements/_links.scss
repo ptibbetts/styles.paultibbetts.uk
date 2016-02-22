@@ -1,10 +1,4 @@
 a {
-	border-bottom: 1px solid darken($white, 10);
-	color: lighten($black, 25);
+	color: $blue;
 	text-decoration: none;
-
-	&:hover {
-		border-color: darken($white, 25);
-	}
-
 }

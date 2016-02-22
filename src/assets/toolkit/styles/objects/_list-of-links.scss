@@ -1,0 +1,33 @@
+@component list-of-links {
+  list-style-type: none;
+  padding-left: 0;
+
+  @descendent header {
+    font-size: 0.7em;
+  }
+
+  @descendent meta {
+    color: $light-grey;
+    display: inline-block;
+    font-size: 0.8em;
+    line-height: 1;
+  }
+
+  & + h3 {
+    margin-top: 3em;
+  }
+
+  li {
+
+    a {
+      border-bottom: 0;
+
+      &:hover {
+        .list-of-links-meta {
+          color: $grey;
+        }
+      }
+    }
+  }
+
+}

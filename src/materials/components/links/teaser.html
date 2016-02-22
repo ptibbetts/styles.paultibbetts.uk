@@ -1,12 +1,12 @@
-<div class="Article teaser">
+<div class="Link teaser">
 
-  <a href="#" class="Article-link teaser-link">
+  <a href="#" class="teaser-link">
 
-    {{default text toolkit.articles.recent.three.text}}
+    {{default text toolkit.links.recent.four.text}}
 
     <div class="teaser-meta">
 
-      {{> timestamp}}
+      {{> timestamp when=when}}
 
       <ul class="inline-list">
         {{#if tags}}
@@ -14,7 +14,7 @@
             <li>#{{this}}</li>
           {{/each}}
         {{^}}
-          {{#each toolkit.articles.recent.three.tags}}
+          {{#each toolkit.links.recent.four.tags}}
             <li>#{{this}}</li>
           {{/each}}
         {{/if}}

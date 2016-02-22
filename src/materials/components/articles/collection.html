@@ -1,11 +1,13 @@
-{{#each toolkit.articles}}
+{{#each toolkit.articles.all}}
 
-	<h3>{{@key}}</h3>
+	<h3>{{this.year}}</h3>
 
-	{{#each this}}
-		<div>
-			{{> articles.teaser link-text=this }}
-		</div>
-	{{/each}}
+	<ul class="Articles-list list-of-links">
+		{{#each this.posts}}
+			<li class="Articles-list-item">
+				{{> articles.teaser text=this.text tags=this.tags}}
+			</li>
+		{{/each}}
+	</ul>
 
 {{/each}}

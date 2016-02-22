@@ -1,0 +1,20 @@
+@component Posts {
+  margin-bottom: 3rem;
+
+  @descendent header {
+    .Posts--recent & {
+      color: darken($light-grey, 25);
+      font-size: 0.75em;
+      text-transform: uppercase;
+    }
+  }
+
+  @descendent allLink {
+    color: $light-grey;
+
+    &:hover {
+      color: $grey;
+    }
+  }
+
+}
