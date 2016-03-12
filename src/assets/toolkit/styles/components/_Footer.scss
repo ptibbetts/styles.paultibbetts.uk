@@ -15,6 +15,11 @@
   a {
     color: inherit;
     transition: color 150ms ease;
+
+    &:hover {
+      border-bottom: 1px solid darken($white, 25);
+    }
+
   }
 
 }
