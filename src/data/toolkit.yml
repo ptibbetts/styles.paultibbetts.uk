@@ -48,25 +48,6 @@ articles:
         tags: ["personal"]
         time: "about 2 weeks ago"
   all:
-    seventeen:
-      year: "2017"
-      posts:
-        one:
-          text: "A Modern WordPress Workflow"
-          tags: ["wordpress"]
-        two:
-          text: "Laravel Birmingham"
-          tags: ["laravel", "laravel birmingham", "meetup"]
-        three:
-          text: "Homebrew Website Club Birmingham"
-          tags: ["hbwcb", "meetup"]
-          time: "about 3 weeks ago"
-        four:
-          text: "Now online at paultibbetts.uk"
-          tags: ["personal"]
-        five:
-          text: "Personal Reboot"
-          tags: ["personal"]
     sixteen:
       year: "2016"
       posts:
