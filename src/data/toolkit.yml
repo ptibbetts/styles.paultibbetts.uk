@@ -17,6 +17,12 @@ navigation:
   about: "About"
   contact: "Contact"
 articles:
+  single:
+    title: "Why I start my projects styleguide first using Fabricator"
+    time: "12/05/14"
+    content: '<p>forces me to think data first</p><p>content models, how will this content be organised? can it be filtered? if so how?<br>proto-content, which you can get early on or from preexisting work<br>content hierarchy(?)</p><p>colours and fonts</p><p>settings that can be edited by almost anyone and be given early on in the process, potentially before design even begins<br>these things can come from pre-existing material such as styleguides or brand documents</p><p>develop a terminology, what do we call things? if you’re making it up (as I often am) write down what things are</p><p>naming convention, stick to it</p><p>can get the whole team involved, on the same page using a common language</p><p>&nbsp;</p><p>ends up as a clickable, responsive prototype that I can test with any device</p><p>can be hosted on GitHub Pages for free – I use npm script (although if it was jekyll it would then be editable + deployed from the github interface)</p>'
+    tags: ["lorem","ipsum","mortus"]
+    location: "The Blue Cube"
   recent:
       one:
         text: "A Modern WordPress Workflow"

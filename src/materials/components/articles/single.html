@@ -1,0 +1,42 @@
+<div class="Article Article--single">
+
+  <h1>{{default title toolkit.articles.single.title}}</h1>
+
+  {{{default content toolkit.articles.single.content}}}
+
+  <footer>
+    <div class="Article-meta">
+
+      <span class="Article-metaName">Published:&nbsp;</span>
+
+      {{> timestamp when=toolkit.articles.single.time}} from <a href="#">{{default location toolkit.articles.single.location}}</a>
+
+      <div class="Article-tagsContainer">
+
+        <span class="Article-metaName">Tagged:</span>
+
+        <ul class="Article-tags inline-list">
+          {{#if tags}}
+            {{#each tags}}
+              <li class="Article-tag">
+                <a href="#" class="Article-tagLink">#{{this}}</a></li>
+            {{/each}}
+          {{^}}
+            {{#each toolkit.articles.single.tags}}
+              <li class="Article-tag">
+                <a href="#" class="Article-tagLink">#{{this}}</a></li>
+            {{/each}}
+          {{/if}}
+        </ul>
+      </div>
+
+      <span class="Article-metaName">Permalink:</span>
+
+      <a href="#" class="Article-link">
+        https://paultibbetts.uk/2016/02/{{slugify toolkit.articles.single.title}}/
+      </a>
+
+    </div>
+  </footer>
+
+</div>
