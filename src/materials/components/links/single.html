@@ -1,12 +1,14 @@
-<div class="Link Link--single">
+<article class="Link Link--single h-entry">
 
-  <h1>
+  <h1 class="p-name">
     <a href="{{default link toolkit.links.single.link}}">
       {{{default text toolkit.links.single.title}}}
     </a>
   </h1>
 
-  <p>{{{default text toolkit.links.single.text}}}</p>
+  <p class="e-content">
+    {{{default text toolkit.links.single.text}}}
+  </p>
 
 
   <footer>
@@ -24,12 +26,12 @@
           {{#if tags}}
             {{#each tags}}
               <li class="Post-tag">
-                <a href="#" class="Post-tagLink">#{{this}}</a></li>
+                <a href="#" class="Post-tagLink p-category">#{{this}}</a></li>
             {{/each}}
           {{^}}
             {{#each toolkit.links.single.tags}}
               <li class="Post-tag">
-                <a href="#" class="Post-tagLink">#{{this}}</a></li>
+                <a href="#" class="Post-tagLink p-category">#{{this}}</a></li>
             {{/each}}
           {{/if}}
         </ul>
@@ -37,11 +39,11 @@
 
       <span class="Post-metaName">Permalink:</span>
 
-      <a href="#" class="Post-permalink">
+      <a href="#" class="Post-permalink u-uid u-url" rel="bookmark">
         https://paultibbetts.uk/links/{{slugify toolkit.links.single.title}}/
       </a>
 
     </div>
   </footer>
 
-</div>
+</article>
