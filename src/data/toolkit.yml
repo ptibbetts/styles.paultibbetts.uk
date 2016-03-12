@@ -192,3 +192,9 @@ links:
       one:
         text: "PostCSS Deep Dive"
         time: "21/11/15"
+  single:
+    title: "JavaScript for WordPress Master Course"
+    text: "I heard about Zac's JavaScript course at the <a href=\"https://thebluecube.com/roots-london-meetup/\">Roots London Meetup</a> and managed to get an early bird discount."
+    link: "http://javascriptforwp.com/"
+    tags: ["javascript", "wordpress", "tutorial"]
+    date: "28/01/16"

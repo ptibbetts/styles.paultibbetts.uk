@@ -1,0 +1,51 @@
+<div class="Link Link--single">
+
+  <h1>
+    <a href="{{default link toolkit.links.single.link}}">
+      {{{default text toolkit.links.single.title}}}
+    </a>
+  </h1>
+
+  <p>{{{default text toolkit.links.single.text}}}</p>
+
+  <p>
+    <a href="{{default link toolkit.links.single.link}}">Visit</a>
+  </p>
+
+
+  <footer>
+    <div class="Post-meta">
+
+      <span class="Post-metaName">Published:&nbsp;</span>
+
+      {{> timestamp when=toolkit.links.single.date}}
+
+      <div class="Post-tagsContainer">
+
+        <span class="Post-metaName">Tagged:</span>
+
+        <ul class="Post-tags inline-list">
+          {{#if tags}}
+            {{#each tags}}
+              <li class="Post-tag">
+                <a href="#" class="Post-tagLink">#{{this}}</a></li>
+            {{/each}}
+          {{^}}
+            {{#each toolkit.links.single.tags}}
+              <li class="Post-tag">
+                <a href="#" class="Post-tagLink">#{{this}}</a></li>
+            {{/each}}
+          {{/if}}
+        </ul>
+      </div>
+
+      <span class="Post-metaName">Permalink:</span>
+
+      <a href="#" class="Post-permalink">
+        https://paultibbetts.uk/links/{{slugify toolkit.links.single.title}}/
+      </a>
+
+    </div>
+  </footer>
+
+</div>
