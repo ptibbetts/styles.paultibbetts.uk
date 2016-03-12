@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>{{title}}</title>
+
+	{{#if fabricator}}<link rel="stylesheet" href="assets/fabricator/styles/f.css">{{/if}}
+
+	<!-- toolkit styles -->
+	{{#if fabricator}}
+		<link rel="stylesheet" href="assets/toolkit/styles/toolkit.css">
+	{{^}}
+		<link rel="stylesheet" href="../assets/toolkit/styles/toolkit.css">
+	{{/if}}
+	<!-- /toolkit styles -->
+
+</head>
+<body>
+
+	{{#if fabricator}}
+		{{> f-icons}}
+		{{> f-menu}}
+		<div class="f-container">
+			{{> f-control-bar}}
+	{{/if}}
+
+	{{> header }}
+
+
+	{% body %}
+
+
+	{{> footer }}
+
+
+	{{#if fabricator}}
+		</div>
+	<script src="assets/fabricator/scripts/f.js"></script>
+	{{/if}}
+
+	<!-- toolkit scripts -->
+	{{#if fabricator}}
+		<script src="assets/toolkit/scripts/toolkit.js"></script>
+	{{^}}
+		<script src="../assets/toolkit/scripts/toolkit.js"></script>
+	{{/if}}
+	<!-- /toolkit scripts -->
+
+</body>
+</html>

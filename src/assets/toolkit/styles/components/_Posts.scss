@@ -18,3 +18,44 @@
   }
 
 }
+
+@component Post {
+
+  @descendent meta {
+    border-top: 1px solid $faint-grey;
+    color: $light-grey;
+    font-size: 0.8em;
+    margin: 2rem 0 0rem;
+    padding-top: 1rem;
+
+    a {
+      color: inherit;
+    }
+
+    .js-touchSupported &,
+    &:hover {
+      color: $grey;
+
+      a {
+        color: $blue;
+      }
+
+    }
+
+  }
+
+  @descendent tags {
+
+  }
+
+  @descendent tag {
+
+    &:not(:last-of-type) {
+      .Post-tagLink:after {
+        content: ",";
+      }
+    }
+
+  }
+
+}

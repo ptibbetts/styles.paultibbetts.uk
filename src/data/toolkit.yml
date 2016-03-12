@@ -9,14 +9,23 @@ colours:
   shades:
     Black: "#000000"
     White: "#FFFFFF"
+
 display-pic: "https://secure.gravatar.com/avatar/36790fabdc80d52c19e45c2df8acb55a"
+
 navigation:
   articles: "Articles"
   notes: "Notes"
   links: "Links"
   about: "About"
   contact: "Contact"
+
 articles:
+  single:
+    title: "Why I start my projects styleguide first using Fabricator"
+    time: "12/05/14"
+    content: '<p>forces me to think data first</p><p>content models, how will this content be organised? can it be filtered? if so how?<br>proto-content, which you can get early on or from preexisting work<br>content hierarchy(?)</p><p>colours and fonts</p><p>settings that can be edited by almost anyone and be given early on in the process, potentially before design even begins<br>these things can come from pre-existing material such as styleguides or brand documents</p><p>develop a terminology, what do we call things? if you’re making it up (as I often am) write down what things are</p><p>naming convention, stick to it</p><p>can get the whole team involved, on the same page using a common language</p><p>&nbsp;</p><p>ends up as a clickable, responsive prototype that I can test with any device</p><p>can be hosted on GitHub Pages for free – I use npm script (although if it was jekyll it would then be editable + deployed from the github interface)</p>'
+    tags: ["lorem","ipsum","mortus"]
+    location: "The Blue Cube"
   recent:
       one:
         text: "A Modern WordPress Workflow"
@@ -81,6 +90,7 @@ articles:
           text: "Personal Reboot"
           tags: ["personal"]
           time: "01/01/1970"
+
 notes:
   recent:
     one:
@@ -127,6 +137,16 @@ notes:
       one:
         text: "Fashionably late for the Birmingham.io Anniversary party"
         time: "30/05/15"
+  single:
+    image: "assets/toolkit/images/note-image.jpg"
+    text: "I'm liking the Fleet Street Food Feast-ival. It's almost Digbeth Dining Club for the JQ"
+    tags: ["food"]
+    date: "13/07/15"
+    time: "15/07/03/18:30"
+    url: "15/07/03/183045"
+    location: "Fleet Street"
+
+
 links:
   recent:
     one:
@@ -172,3 +192,9 @@ links:
       one:
         text: "PostCSS Deep Dive"
         time: "21/11/15"
+  single:
+    title: "JavaScript for WordPress Master Course"
+    text: "I heard about Zac's JavaScript course at the <a href=\"https://thebluecube.com/roots-london-meetup/\">Roots London Meetup</a> and managed to get an early bird discount."
+    link: "http://javascriptforwp.com/"
+    tags: ["javascript", "wordpress", "tutorial"]
+    date: "28/01/16"
