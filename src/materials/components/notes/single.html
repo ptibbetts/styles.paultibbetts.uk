@@ -1,15 +1,17 @@
-<div class="Article Article--single">
+<div class="Note Note--single">
 
-  <h1>{{default title toolkit.articles.single.title}}</h1>
+  <h1>{{default text toolkit.notes.single.text}}</h1>
 
-  {{{default content toolkit.articles.single.content}}}
+  <img src="{{baseurl}}/{{default image toolkit.notes.single.image}}" alt="" class="rounded-edges">
+
+  {{{default content toolkit.notes.single.content}}}
 
   <footer>
     <div class="Post-meta">
 
       <span class="Post-metaName">Published:&nbsp;</span>
 
-      {{> timestamp when=toolkit.articles.single.time}} from <a href="#">{{default location toolkit.articles.single.location}}</a>
+      {{> timestamp when=toolkit.notes.single.date}} from <a href="#">{{default location toolkit.notes.single.location}}</a>
 
       <div class="Post-tagsContainer">
 
@@ -22,7 +24,7 @@
                 <a href="#" class="Post-tagLink">#{{this}}</a></li>
             {{/each}}
           {{^}}
-            {{#each toolkit.articles.single.tags}}
+            {{#each toolkit.notes.single.tags}}
               <li class="Post-tag">
                 <a href="#" class="Post-tagLink">#{{this}}</a></li>
             {{/each}}
@@ -32,8 +34,8 @@
 
       <span class="Post-metaName">Permalink:</span>
 
-      <a href="#" class="Post-link">
-        https://paultibbetts.uk/2016/02/{{slugify toolkit.articles.single.title}}/
+      <a href="#" class="Post-permalink">
+        https://paultibbetts.uk/{{toolkit.notes.single.url}}/
       </a>
 
     </div>
