@@ -14,13 +14,16 @@
   }
 
   & + h3 {
-    margin-top: 3em;
+    margin-top: 2em;
   }
 
   li {
+    min-height: 1.8em;
 
     a {
       border-bottom: 0;
+      display: inline-block;
+      width: 100%;
 
       &:hover {
         .list-of-links-meta {
