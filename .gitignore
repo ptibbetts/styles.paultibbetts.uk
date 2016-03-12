@@ -1,3 +1,6 @@
 node_modules
 dist
 .sass-cache
+
+!dist/assets/toolkit/scripts/toolkit.js
+!dist/assets/toolkit/styles/toolkit.css
