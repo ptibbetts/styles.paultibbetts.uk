@@ -2,8 +2,4 @@
 notes: |
   so this thing happened
 ---
-{{#if when}}
-  <time class="timestamp">{{when}}</time>
-{{^}}
-  <time class="timestamp">{{toolkit.articles.recent.one.time}}</time>
-{{/if}}
+<time class="timestamp dt-published" datetime="2016-02-04 12:00:00">{{default when toolkit.articles.recent.one.time}}</time>

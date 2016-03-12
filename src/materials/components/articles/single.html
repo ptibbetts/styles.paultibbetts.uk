@@ -1,8 +1,12 @@
-<div class="Article Article--single">
+<article class="Article Article--single h-entry">
 
-  <h1>{{default title toolkit.articles.single.title}}</h1>
+  <h1 class="p-name">
+    {{default title toolkit.articles.single.title}}
+  </h1>
 
-  {{{default content toolkit.articles.single.content}}}
+  <div class="e-content">
+    {{{default content toolkit.articles.single.content}}}
+  </div>
 
   <footer>
     <div class="Post-meta">
@@ -19,12 +23,12 @@
           {{#if tags}}
             {{#each tags}}
               <li class="Post-tag">
-                <a href="#" class="Post-tagLink">#{{this}}</a></li>
+                <a href="#" class="Post-tagLink p-category">#{{this}}</a></li>
             {{/each}}
           {{^}}
             {{#each toolkit.articles.single.tags}}
               <li class="Post-tag">
-                <a href="#" class="Post-tagLink">#{{this}}</a></li>
+                <a href="#" class="Post-tagLink p-category">#{{this}}</a></li>
             {{/each}}
           {{/if}}
         </ul>
@@ -32,11 +36,11 @@
 
       <span class="Post-metaName">Permalink:</span>
 
-      <a href="#" class="Post-link">
+      <a href="#" class="Post-link u-uid u-url" rel="bookmark">
         https://paultibbetts.uk/2016/02/{{slugify toolkit.articles.single.title}}/
       </a>
 
     </div>
   </footer>
 
-</div>
+</article>

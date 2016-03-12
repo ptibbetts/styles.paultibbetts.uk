@@ -1,17 +1,20 @@
-<div class="Note Note--single">
+<article class="Note Note--single h-entry">
 
-  <h1>{{default text toolkit.notes.single.text}}</h1>
+  <h1 class="p-name">
+    {{default text toolkit.notes.single.text}}
+  </h1>
 
-  <img src="{{baseurl}}/{{default image toolkit.notes.single.image}}" alt="" class="rounded-edges">
-
-  {{{default content toolkit.notes.single.content}}}
+  <div class="e-content">
+    <img src="{{baseurl}}/{{default image toolkit.notes.single.image}}" alt="" class="rounded-edges">
+    {{{default content toolkit.notes.single.content}}}
+  </div>
 
   <footer>
     <div class="Post-meta">
 
       <span class="Post-metaName">Published:&nbsp;</span>
 
-      {{> timestamp when=toolkit.notes.single.date}} from <a href="#">{{default location toolkit.notes.single.location}}</a>
+      {{> timestamp when=toolkit.notes.single.date}} from <a href="#" class="p-location h-geo">{{default location toolkit.notes.single.location}}</a>
 
       <div class="Post-tagsContainer">
 
@@ -21,12 +24,12 @@
           {{#if tags}}
             {{#each tags}}
               <li class="Post-tag">
-                <a href="#" class="Post-tagLink">#{{this}}</a></li>
+                <a href="#" class="Post-tagLink p-category">#{{this}}</a></li>
             {{/each}}
           {{^}}
             {{#each toolkit.notes.single.tags}}
               <li class="Post-tag">
-                <a href="#" class="Post-tagLink">#{{this}}</a></li>
+                <a href="#" class="Post-tagLink p-category">#{{this}}</a></li>
             {{/each}}
           {{/if}}
         </ul>
@@ -34,11 +37,11 @@
 
       <span class="Post-metaName">Permalink:</span>
 
-      <a href="#" class="Post-permalink">
+      <a href="#" class="Post-permalink u-uid u-url" rel="bookmark">
         https://paultibbetts.uk/{{toolkit.notes.single.url}}/
       </a>
 
     </div>
   </footer>
 
-</div>
+</article>
