@@ -9,13 +9,16 @@ colours:
   shades:
     Black: "#000000"
     White: "#FFFFFF"
+
 display-pic: "https://secure.gravatar.com/avatar/36790fabdc80d52c19e45c2df8acb55a"
+
 navigation:
   articles: "Articles"
   notes: "Notes"
   links: "Links"
   about: "About"
   contact: "Contact"
+
 articles:
   single:
     title: "Why I start my projects styleguide first using Fabricator"
@@ -87,6 +90,7 @@ articles:
           text: "Personal Reboot"
           tags: ["personal"]
           time: "01/01/1970"
+
 notes:
   recent:
     one:
@@ -133,6 +137,7 @@ notes:
       one:
         text: "Fashionably late for the Birmingham.io Anniversary party"
         time: "30/05/15"
+
 links:
   recent:
     one:
