@@ -143,6 +143,9 @@ var handlebarHelpers = {
 	},
 	capitalise: function (value) {
 			return value.charAt(0).toUpperCase() + value.slice(1);
+	},
+	slugify: function (title) {
+  return title.toLowerCase().replace(/ /g,'-').replace(/[^\w-]+/g,'');
 	}
 }
 
