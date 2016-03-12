@@ -37,6 +37,15 @@
     max-width: 25em;
     padding-right: 1em;
 
+    h1 {
+      font-size: 1.1em;
+
+      @media (min-width: 31.25rem) {
+        font-size: 2em;
+      }
+
+    }
+
     p a {
       border-bottom: 1px solid darken($white, 10);
       display: inline-block;
