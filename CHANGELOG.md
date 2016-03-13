@@ -1,3 +1,7 @@
+### 1.0.4: March 13th, 2016
+* Fixed responsive images
+* Removed u-uid microformat from post permalink
+
 ### 1.0.3: March 13th, 2016
 * Added CHANGELOG.md
 * Removed some unused CSS classes and also the hashtag from tags on single posts
