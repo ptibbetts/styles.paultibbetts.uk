@@ -54,10 +54,8 @@
 
   @descendent tag {
 
-    &:not(:last-of-type) {
-      .Post-tagLink:after {
-        content: ",";
-      }
+    &:not(:last-of-type):after {
+      content: ",";
     }
 
   }
