@@ -23,12 +23,12 @@
           {{#if tags}}
             {{#each tags}}
               <li class="Post-tag">
-                <a href="#" class="Post-tagLink p-category">#{{this}}</a></li>
+                <a href="#" class="Post-tagLink p-category">{{this}}</a></li>
             {{/each}}
           {{^}}
             {{#each toolkit.articles.single.tags}}
               <li class="Post-tag">
-                <a href="#" class="Post-tagLink p-category">#{{this}}</a></li>
+                <a href="#" class="Post-tagLink p-category">{{this}}</a></li>
             {{/each}}
           {{/if}}
         </ul>
