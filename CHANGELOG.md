@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+### 1.0.7: March 14th, 2016, minutes later
+* Upgraded single post p-author to a mini h-card
+
+>>>>>>> develop
 ### 1.0.6: March 14th, 2016
 * Added p-author microformat to each post with display:none
 
