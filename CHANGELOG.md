@@ -1,3 +1,12 @@
+### 1.0.7: March 14th, 2016, minutes later
+* Upgraded single post p-author to a mini h-card
+
+### 1.0.6: March 14th, 2016
+* Added p-author microformat to each post with display:none
+
+### 1.0.5: March 13th, 2016
+* "Recompiled assets"
+
 ### 1.0.4: March 13th, 2016
 * Fixed responsive images
 * Removed u-uid microformat from post permalink
