@@ -13,7 +13,9 @@
 
       <span class="Post-metaName">Published:&nbsp;</span>
 
-      {{> timestamp when=toolkit.articles.single.time}} from <a href="#">{{default location toolkit.articles.single.location}}</a>
+      {{> timestamp when=toolkit.articles.single.time}}
+      from <a href="#" class="p-location h-geo">{{default location toolkit.articles.single.location}}</a>
+      <span class="Post-byline">by <span class="p-author">Paul Tibbetts</span></span>
 
       <div class="Post-tagsContainer">
 
