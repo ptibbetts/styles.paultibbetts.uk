@@ -1,3 +1,6 @@
+### 1.0.8: March 14th, 2016, not even minutes later
+* Fixed single post h-card
+
 ### 1.0.7: March 14th, 2016, minutes later
 * Upgraded single post p-author to a mini h-card
 
