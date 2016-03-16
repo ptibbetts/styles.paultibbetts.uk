@@ -118,7 +118,7 @@ notes:
       one:
         text: "Fashionably late for the Birmingham.io Anniversary party"
         time: "30/05/15"
-  single:
+  single-image:
     image: "assets/toolkit/images/note-image.jpg"
     text: "I'm liking the Fleet Street Food Feast-ival. It's almost Digbeth Dining Club for the JQ"
     tags: ["food"]
@@ -126,6 +126,13 @@ notes:
     time: "15/07/03/18:30"
     url: "15/07/03/183045"
     location: "Fleet Street"
+  single-text:
+    text: "Thoroughly enjoyed @indiewebcamp Brighton. Massive thank you to @adactio and @lottejackson for hosting it and everyone else for taking part"
+    tags: ["indieweb"]
+    date: "13/07/15"
+    time: "15/07/03/18:30"
+    url: "15/07/03/183045"
+    location: "Brighton"
 
 
 links:
