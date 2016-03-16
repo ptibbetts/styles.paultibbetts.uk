@@ -1,12 +1,11 @@
 <article class="Note Note--single h-entry">
 
   <h1 class="p-name">
-    {{default text toolkit.notes.single.text}}
+    {{default text toolkit.notes.single-image.text}}
   </h1>
 
   <div class="e-content">
-    <img src="{{baseurl}}/{{default image toolkit.notes.single.image}}" alt="" class="rounded-edges">
-    {{{default content toolkit.notes.single.content}}}
+    <img src="{{baseurl}}/{{default image toolkit.notes.single-image.image}}" alt="" class="rounded-edges">
   </div>
 
   <footer>
@@ -14,8 +13,8 @@
 
       <span class="Post-metaName">Published:&nbsp;</span>
 
-      {{> timestamp when=toolkit.notes.single.date}}
-      from <a href="#" class="p-location h-geo">{{default location toolkit.notes.single.location}}</a>
+      {{> timestamp when=toolkit.notes.single-image.date}}
+      from <a href="#" class="p-location h-geo">{{default location toolkit.notes.single-image.location}}</a>
       <span class="Post-byline">{{> byline}}</span>
 
       <div class="Post-tagsContainer">
@@ -29,7 +28,7 @@
                 <a href="#" class="Post-tagLink p-category">{{this}}</a></li>
             {{/each}}
           {{^}}
-            {{#each toolkit.notes.single.tags}}
+            {{#each toolkit.notes.single-image.tags}}
               <li class="Post-tag">
                 <a href="#" class="Post-tagLink p-category">{{this}}</a></li>
             {{/each}}
@@ -39,8 +38,13 @@
 
       <span class="Post-metaName">Permalink:</span>
 
+<<<<<<< HEAD:src/materials/components/notes/single.html
       <a href="#" class="Post-permalink u-url" rel="bookmark">
         https://paultibbetts.uk/{{toolkit.notes.single.url}}/
+=======
+      <a href="#" class="Post-permalink u-uid u-url" rel="bookmark">
+        https://paultibbetts.uk/{{toolkit.notes.single-image.url}}/
+>>>>>>> feature/microformats:src/materials/components/notes/single-image.html
       </a>
 
     </div>
