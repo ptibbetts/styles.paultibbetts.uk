@@ -1,28 +1,50 @@
-### 1.0.8: March 14th, 2016, not even minutes later
-* Fixed single post h-card
+# Change Log
+This project attempts to stick to [Semantic Versioning](http://semver.org/).
 
-### 1.0.7: March 14th, 2016, minutes later
-* Upgraded single post p-author to a mini h-card
+## Unreleased
+### Added
+- added photo to single post h-card
+- added p-note to homepage h-card
+- added text only note
 
-### 1.0.6: March 14th, 2016
-* Added p-author microformat to each post with display:none
+## 1.0.8 2016-03-14 not even minutes later
+### Fixed
+- fixed single post h-card
 
-### 1.0.5: March 13th, 2016
-* "Recompiled assets"
+## 1.0.7 2016-03-14 minutes later
+### Changed
+- changed single post p-author to a mini h-card
 
-### 1.0.4: March 13th, 2016
-* Fixed responsive images
-* Removed u-uid microformat from post permalink
+## 1.0.6 2016-03-14
+### Added
+- p-author microformat to each post with display:none
 
-### 1.0.3: March 13th, 2016
-* Added CHANGELOG.md
-* Removed some unused CSS classes and also the hashtag from tags on single posts
+## 1.0.5 2016-03-13
+### Fixed
+- "Recompiled assets"
 
-### 1.0.2: March 12th, 2016, about an hour later
-* Fixed importing of Normalize.css so that code can be imported into Allusion
+## 1.0.4 2016-03-13
+### Removed
+- removed u-uid microformat from post permalink
 
-### 1.0.1: March 12th, 2016, a few minutes later
-* Added built .css and .js assets to repo
+### Fixed
+- responsive images
 
-### 1.0.0: March 12th, 2016
-* Project init!
+## 1.0.3 2016-03-13
+### Added
+- Added CHANGELOG.md
+
+### Removed
+- Removed some unused CSS classes and also the hashtag from tags on single posts
+
+## 1.0.2 2016-03-12 about an hour later
+### Fixed
+- Fixed importing of Normalize.css so that code can be imported into Allusion
+
+## 1.0.1 2016-03-12 a few minutes later
+### Added
+- Added built .css and .js assets to repo
+
+## 1.0.0 2016-03-12
+### Added
+- Project init!
