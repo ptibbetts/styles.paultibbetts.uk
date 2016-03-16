@@ -1,10 +1,10 @@
 @component Posts {
-  margin-bottom: 3rem;
 
   @descendent header {
     .Posts--recent & {
       color: darken($light-grey, 25);
       font-size: 0.75em;
+      margin-top: 0;
       text-transform: uppercase;
     }
   }
@@ -20,6 +20,10 @@
 }
 
 @component Post {
+
+  footer {
+    margin-top: 1rem;
+  }
 
   @descendent meta {
     border-top: 1px solid $faint-grey;
