@@ -1,6 +1,10 @@
 # Change Log
 This project attempts to stick to [Semantic Versioning](http://semver.org/).
 
+## Unreleased
+### Added
+- added Signature component
+
 ## 1.0.9 2016-03-16
 ### Added
 - added photo to single post h-card
