@@ -1,3 +1,5 @@
+@import "./variables";
+
 @component Posts {
   margin-bottom: 3rem;
 

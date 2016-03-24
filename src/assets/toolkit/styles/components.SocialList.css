@@ -1,5 +1,5 @@
 @component SocialList {
-  // @include inline-list;
+  /*@include inline-list;*/
 
   @descendent item {
     margin-right: 0.5em;

@@ -1,47 +1,56 @@
 'use strict';
 
 // modules
+var advancedVariables = require('postcss-advanced-variables');
 var assemble = require('fabricator-assemble');
 var atImport = require('postcss-easy-import');
+var atRoot = require('postcss-atroot');
+var bemAtRules = require('postcss-bem');
 var browserSync = require('browser-sync');
+var colorguard = require('colorguard');
 var cssMQPacker = require('css-mqpacker');
 var cssnano = require('cssnano');
 var csso = require('gulp-csso');
+var cssVariables = require('postcss-css-variables');
+var currentSelector = require('postcss-current-selector');
 var del = require('del');
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var gulpif = require('gulp-if');
 var imagemin = require('gulp-imagemin');
+var maps = require('postcss-map');
+var nestedProps = require('postcss-nested-props').default;
 var postcss	= require('gulp-postcss');
 var precss = require('precss');
 var prefix = require('gulp-autoprefixer');
+var propertyLookup = require('postcss-property-lookup');
 var reporter = require('postcss-reporter');
 var rename = require('gulp-rename');
 var reload = browserSync.reload;
 var runSequence = require('run-sequence');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
+var stylelint = require('stylelint');
 var suitAtRules = require('postcss-bem');
 var syntax = require('postcss-scss');
 var webpack = require('webpack');
 
-
 // configuration
 var config = {
+	dest: 'dist',
 	dev: gutil.env.dev,
 	src: {
 		scripts: {
 			fabricator: './src/assets/fabricator/scripts/fabricator.js',
-			toolkit: './src/assets/toolkit/scripts/toolkit.js'
+			toolkit: './src/assets/toolkit/scripts/entry.js'
 		},
 		styles: {
 			fabricator: 'src/assets/fabricator/styles/fabricator.scss',
-			toolkit: 'src/assets/toolkit/styles/toolkit.scss'
+			toolkit: 'src/assets/toolkit/styles/{variables,generic,base,objects,components,utilities,}.css'
 		},
 		images: 'src/assets/toolkit/images/**/*',
 		views: 'src/toolkit/views/*.html'
-	},
-	dest: 'dist'
+	}
 };
 
 
@@ -61,7 +70,7 @@ gulp.task('styles:fabricator', function () {
 	gulp.src(config.src.styles.fabricator)
 		.pipe(sourcemaps.init())
 		.pipe(sass().on('error', sass.logError))
-		.pipe(prefix('last 2 versions'))
+		.pipe(prefix('last 1 version'))
 		.pipe(gulpif(!config.dev, csso()))
 		.pipe(rename('f.css'))
 		.pipe(sourcemaps.write())
@@ -69,35 +78,47 @@ gulp.task('styles:fabricator', function () {
 		.pipe(gulpif(config.dev, reload({stream:true})));
 });
 
+
+
 gulp.task('styles:toolkit', function () {
 
-		var preprocessors = [
-			atImport({
-				prefix: '_',
-				extensions: ['.scss','.css']
-			}),
-			suitAtRules,
-			reporter
-		];
+	var mapsOptions = {
+		basePath: 'src/assets/toolkit/styles',
+		maps: [ 'settings.yml' ]
+	};
 
-		var postprocessors = [
-			cssMQPacker,
-			cssnano,
-			prefix,
-		 	precss,
-			reporter
-		];
+	var reporterOptions = {
+		clearMessages: true
+	};
 
-    return gulp.src(config.src.styles.toolkit)
-				.pipe(gulpif(config.dev, sourcemaps.init()))
-				.pipe(postcss(preprocessors,{syntax: syntax}))
-				.pipe(sass().on('error', sass.logError))
-				.pipe(postcss(postprocessors))
-				.pipe(gulpif(!config.dev, csso()))
-				.pipe(gulpif(config.dev, sourcemaps.write()))
-				.pipe(gulp.dest(config.dest + '/assets/toolkit/styles'))
-				.pipe(gulpif(config.dev, reload({stream:true})));
-});
+	var processors = [
+		atImport({
+			prefix: ''
+		}),
+		maps(mapsOptions),
+		advancedVariables,
+		bemAtRules,
+		atRoot,
+		cssVariables,
+		precss,
+		currentSelector,
+		nestedProps,
+		prefix,
+		cssMQPacker,
+		cssnano,
+		colorguard,
+		stylelint,
+		reporter(reporterOptions)
+	];
+
+	return gulp.src(config.src.styles.toolkit)
+		.pipe(gulpif(config.dev, sourcemaps.init()))
+		.pipe(postcss(processors))
+		.pipe(gulpif(!config.dev, csso()))
+		.pipe(gulpif(config.dev, sourcemaps.write()))
+		.pipe(gulp.dest(config.dest + '/assets/toolkit/styles'))
+		.pipe(gulpif(config.dev, reload({stream:true})));
+	});
 
 gulp.task('styles', ['styles:fabricator', 'styles:toolkit']);
 
@@ -118,7 +139,6 @@ gulp.task('scripts', function (done) {
 	});
 });
 
-
 // images
 gulp.task('images', ['favicon'], function () {
 	return gulp.src(config.src.images)
@@ -131,20 +151,21 @@ gulp.task('favicon', function () {
 		.pipe(gulp.dest(config.dest));
 });
 
-gulp.task('cname', function () {
-	return gulp.src('./src/CNAME')
-		.pipe(gulp.dest(config.dest));
-});
 
 var handlebarHelpers = {
 	default: function (value, defaultValue) {
 		return value ? value : defaultValue;
 	},
+	camelify: function (str) {
+		return str.replace(/(?:^.|[A-Z]|\b.)/g, function(letter, index) {
+			return index == 0 ? letter.toLowerCase() : letter.toUpperCase();
+		}).replace(/\s+/g, '');
+	},
 	capitalise: function (value) {
-			return value.charAt(0).toUpperCase() + value.slice(1);
+		return value.charAt(0).toUpperCase() + value.slice(1);
 	},
 	slugify: function (title) {
-  return title.toLowerCase().replace(/ /g,'-').replace(/[^\w-]+/g,'');
+	  return title.toLowerCase().replace(/ /g,'-').replace(/[^\w-]+/g,'');
 	}
 }
 
@@ -156,8 +177,6 @@ gulp.task('assemble', function (done) {
 	});
 	done();
 });
-
-
 // server
 gulp.task('serve', function () {
 
@@ -166,7 +185,7 @@ gulp.task('serve', function () {
 			baseDir: config.dest
 		},
 		notify: false,
-		logPrefix: 'FABRICATOR'
+		logPrefix: 'CARDIGAN'
 	});
 
 	/**
@@ -195,7 +214,7 @@ gulp.task('serve', function () {
 	gulp.watch('src/assets/fabricator/styles/**/*.scss', ['styles:fabricator:watch']);
 
 	gulp.task('styles:toolkit:watch', ['styles:toolkit']);
-	gulp.watch('src/assets/toolkit/styles/**/*.scss', ['styles:toolkit:watch']);
+	gulp.watch(['src/assets/toolkit/styles/**/*.css','src/assets/toolkit/styles/**/.*.css'], ['styles:toolkit:watch']);
 
 	gulp.task('scripts:watch', ['scripts'], reload);
 	gulp.watch('src/assets/{fabricator,toolkit}/scripts/**/*.js', ['scripts:watch']).on('change', webpackCache);
@@ -214,7 +233,6 @@ gulp.task('default', ['clean'], function () {
 		'styles',
 		'scripts',
 		'images',
-		'cname',
 		'assemble'
 	];
 

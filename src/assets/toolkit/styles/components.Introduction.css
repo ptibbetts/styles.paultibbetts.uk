@@ -1,3 +1,5 @@
+@import "./variables";
+
 @component Introduction {
   background: $white;
   display: flex;

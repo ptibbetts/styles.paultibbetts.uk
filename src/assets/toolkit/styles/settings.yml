@@ -1,6 +1,12 @@
-define-color-blue: &color_blue "#47b8e0"
+define-color-blue: &color_blue "#1791d0"
+define-color-dark-grey: &color_dark-grey "#404040"
+define-color-grey: &color_grey "#8C8C8C"
+define-color-light-grey: &color_light-grey "#CCCCCC"
+define-color-faint-grey: &color_faint-grey "#E6E6E6"
+define-color-black: &color_black "#000000"
+define-color-white: &color_white "#FFFFFF"
 
 link-color: *color_blue
 link-decoration: "none"
 
-base-background-color: "#e1eef6"
+base-background-color: *color_white

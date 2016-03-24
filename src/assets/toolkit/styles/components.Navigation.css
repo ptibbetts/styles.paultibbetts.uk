@@ -1,3 +1,5 @@
+@import "./variables";
+
 @component Navigation {
 	display: flex;
 	flex-wrap: wrap;
