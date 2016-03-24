@@ -8,7 +8,6 @@ var cssMQPacker = require('css-mqpacker');
 var cssnano = require('cssnano');
 var csso = require('gulp-csso');
 var del = require('del');
-var fontMagician = require('postcss-font-magician');
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var gulpif = require('gulp-if');

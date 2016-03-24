@@ -1,17 +1,17 @@
 var path = require('path');
 var webpack = require('webpack');
 
-module.exports = function(fabricatorConfig) {
+module.exports = function(cardiganConfig) {
 
 	"use strict";
 
 	var config = {
 		entry: {
-			'fabricator/scripts/f': fabricatorConfig.src.scripts.fabricator,
-			'toolkit/scripts/toolkit': fabricatorConfig.src.scripts.toolkit
+			'fabricator/scripts/fabricator': cardiganConfig.src.scripts.fabricator,
+			'toolkit/scripts/toolkit': cardiganConfig.src.scripts.toolkit
 		},
 		output: {
-			path: path.resolve(__dirname, fabricatorConfig.dest, 'assets'),
+			path: path.resolve(__dirname, cardiganConfig.dest, 'assets'),
 			filename: '[name].js'
 		},
 		module: {
@@ -19,7 +19,8 @@ module.exports = function(fabricatorConfig) {
 				{
 					test: /\.js$/,
 					exclude: /(node_modules|prism\.js)/,
-					loaders: ['babel-loader']
+					loaders: ['babel'],
+					presets: ['es2015', 'stage-2']
 				}
 			]
 		},
@@ -27,7 +28,7 @@ module.exports = function(fabricatorConfig) {
 		cache: {}
 	};
 
-	if (!fabricatorConfig.dev) {
+	if (!cardiganConfig.dev) {
 		config.plugins.push(
 			new webpack.optimize.UglifyJsPlugin()
 		);
