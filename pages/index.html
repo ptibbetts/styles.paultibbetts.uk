@@ -11,7 +11,11 @@
 	
 
 	<!-- toolkit styles -->
-		<link rel="stylesheet" href="../assets/toolkit/styles/toolkit.css">
+	<link rel="stylesheet" href="../assets/toolkit/styles/generic.css">
+	<link rel="stylesheet" href="../assets/toolkit/styles/base.css">
+	<link rel="stylesheet" href="../assets/toolkit/styles/objects.css">
+	<link rel="stylesheet" href="../assets/toolkit/styles/components.css">
+	<link rel="stylesheet" href="../assets/toolkit/styles/utilities.css">
 	<!-- /toolkit styles -->
 
 </head>
@@ -19,102 +23,113 @@
 
 
 
-	<header class="Header" role="banner">
+	<header class="c-Header" role="banner">
 	
-		<div class="container container--fluid">
+		<div class="l l-container l-container--fluid">
 	
-			<a href="../pages/index.html" class="Brand">
-				<div class="Logo-padding">
-				  <img src="https://secure.gravatar.com/avatar/36790fabdc80d52c19e45c2df8acb55a" alt="my face" class="Logo">
-				</div>		</a>
+			<div class="l-i u-1/2">
 	
-			<nav class="Navigation">
-				<ul class="Navigation-list">
-					<li class="Navigation-listItem">
-						<a href="../pages/articles.html" class="Navigation-link">Articles</a>
+				<a href="../pages/index.html" class="Brand">
+					<div class="c-Logo-padding">
+					  <img src="https://secure.gravatar.com/avatar/36790fabdc80d52c19e45c2df8acb55a" alt="my face" class="c-Logo">
+					</div>			</a>
+	
+			</div>
+	
+			<div class="l-i u-1/2 u-flex u-flexAlign--end u-flexJustify--center u-flexColumn">
+	
+				<nav class="c-Navigation">
+					<ul class="c-Navigation-list">
+						<li class="c-Navigation-listItem">
+							<a href="../pages/articles.html" class="c-Navigation-link">Articles</a>
+						</li>
+						<li class="c-Navigation-listItem">
+							<a href="../pages/notes.html" class="c-Navigation-link">Notes</a>
+						</li>
+						<li class="c-Navigation-listItem">
+							<a href="../pages/links.html" class="c-Navigation-link">Links</a>
+						</li>
+						<li class="c-Navigation-listItem">
+							<a href="../pages/about.html" class="c-Navigation-link">About</a>
+						</li>
+						<li class="c-Navigation-listItem">
+							<a href="../pages/contact.html" class="c-Navigation-link">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+	
+		</div>
+	
+	</header><section class="c-Introduction h-card">
+
+	<div class="l l-container l--g">
+
+		<div class="l-i u-1/5">
+			<img src="https://en.gravatar.com/userimage/7483785/89659c7a29dc4fac894c9d7b8f8d378d.jpg?size=200" alt="my face" class="c-Introduction-image u-photo">
+		</div>
+
+		<div class="l-i u-4/5">
+			<div class="c-Introduction-text">
+				<h1>
+					Hi, I'm <a href="../" class="u-url u-uid p-name">Paul Tibbetts</a>
+				</h1>
+
+				<span class="p-note">
+					<p>
+						I'm a front end developer at
+						<a href="https://thebluecube.com" class="p-org h-card">The Blue Cube</a> in the
+						Jewellery Quarter, <span class="p-locality">Birmingham</span> <span class="p-country-name">UK</span>
+					</p>
+
+					<p>
+						I write both <a href="../pages/articles.html">long</a> and
+						 <a href="../pages/notes.html">short</a> things as well as
+						 <a href="../pages/links.html">share links</a> to stuff
+					</p>
+				</span>
+
+				<p>
+					<a href="mailto:email@paultibbetts.uk" class="u-email">email@paultibbetts.uk</a>
+				</p>
+
+				<ul class="c-SocialList u-listInline">
+					<li class="c-SocialList-item">
+						<a href="#" rel="me">
+							<!-- <img src="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2018.1.1%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Capa_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20fill%3D%22%233A89C9%22%20width%3D%2220px%22%20height%3D%2220px%22%0D%0A%09%20viewBox%3D%220%200%20612%20612%22%20style%3D%22enable-background%3Anew%200%200%20612%20612%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cg%3E%0D%0A%09%09%3Cpath%20style%3D%22fill%3A%233A89C9%3B%22%20d%3D%22M612%2C116.258c-22.525%2C9.981-46.694%2C16.75-72.088%2C19.772c25.929-15.527%2C45.777-40.155%2C55.184-69.411%0D%0A%09%09%09c-24.322%2C14.379-51.169%2C24.82-79.775%2C30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334%2C0-125.551%2C56.217-125.551%2C125.513%0D%0A%09%09%09c0%2C9.828%2C1.109%2C19.427%2C3.251%2C28.606C197.065%2C206.32%2C104.556%2C156.337%2C42.641%2C80.386c-10.823%2C18.51-16.98%2C40.078-16.98%2C63.101%0D%0A%09%09%09c0%2C43.559%2C22.181%2C81.993%2C55.835%2C104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0%2C60.806%2C43.291%2C111.554%2C100.693%2C123.104%0D%0A%09%09%09c-10.517%2C2.83-21.607%2C4.398-33.08%2C4.398c-8.107%2C0-15.947-0.803-23.634-2.333c15.985%2C49.907%2C62.336%2C86.199%2C117.253%2C87.194%0D%0A%09%09%09c-42.947%2C33.654-97.099%2C53.655-155.916%2C53.655c-10.134%2C0-20.116-0.612-29.944-1.721c55.567%2C35.681%2C121.536%2C56.485%2C192.438%2C56.485%0D%0A%09%09%09c230.948%2C0%2C357.188-191.291%2C357.188-357.188l-0.421-16.253C573.872%2C163.526%2C595.211%2C141.422%2C612%2C116.258z%22%2F%3E%0D%0A%09%3C%2Fg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3C%2Fsvg%3E%0D%0A"> -->
+							Twitter
+						</a>
 					</li>
-					<li class="Navigation-listItem">
-						<a href="../pages/notes.html" class="Navigation-link">Notes</a>
+					<li class="c-SocialList-item">
+						<a href="#" rel="me">Birmingham.io</a>
 					</li>
-					<li class="Navigation-listItem">
-						<a href="../pages/links.html" class="Navigation-link">Links</a>
+					<li class="c-SocialList-item">
+						<a href="#" rel="me">
+							<!-- <img src="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2018.1.1%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Capa_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20fill%3D%22%233A89C9%22%20width%3D%2220px%22%20height%3D%2220px%22%0D%0A%09%20viewBox%3D%220%200%2026%2026%22%20style%3D%22enable-background%3Anew%200%200%2026%2026%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cpath%20style%3D%22fill%3A%233A89C9%3B%22%20d%3D%22M20%2C7c-0.551%2C0-1-0.449-1-1V4c0-0.551%2C0.449-1%2C1-1h2c0.551%2C0%2C1%2C0.449%2C1%2C1v2c0%2C0.551-0.449%2C1-1%2C1H20z%0D%0A%09%09%22%2F%3E%0D%0A%09%3Cpath%20style%3D%22fill%3A%233A89C9%3B%22%20d%3D%22M13%2C9.188c-0.726%2C0-1.396%2C0.213-1.973%2C0.563c0.18-0.056%2C0.367-0.093%2C0.564-0.093%0D%0A%09%09c1.068%2C0%2C1.933%2C0.865%2C1.933%2C1.934c0%2C1.066-0.865%2C1.933-1.933%2C1.933s-1.933-0.866-1.933-1.933c0-0.199%2C0.039-0.386%2C0.094-0.565%0D%0A%09%09C9.4%2C11.604%2C9.188%2C12.274%2C9.188%2C13c0%2C2.107%2C1.705%2C3.813%2C3.813%2C3.813c2.105%2C0%2C3.813-1.705%2C3.813-3.813S15.105%2C9.188%2C13%2C9.188z%22%2F%3E%0D%0A%09%3Cg%3E%0D%0A%09%09%3Cpath%20style%3D%22fill%3A%233A89C9%3B%22%20d%3D%22M13%2C7c3.313%2C0%2C6%2C2.686%2C6%2C6s-2.688%2C6-6%2C6c-3.313%2C0-6-2.686-6-6S9.687%2C7%2C13%2C7%20M13%2C5%0D%0A%09%09%09c-4.411%2C0-8%2C3.589-8%2C8s3.589%2C8%2C8%2C8s8-3.589%2C8-8S17.411%2C5%2C13%2C5L13%2C5z%22%2F%3E%0D%0A%09%3C%2Fg%3E%0D%0A%09%3Cpath%20style%3D%22fill%3A%233A89C9%3B%22%20d%3D%22M21.125%2C0H4.875C2.182%2C0%2C0%2C2.182%2C0%2C4.875v16.25C0%2C23.818%2C2.182%2C26%2C4.875%2C26h16.25%0D%0A%09%09C23.818%2C26%2C26%2C23.818%2C26%2C21.125V4.875C26%2C2.182%2C23.818%2C0%2C21.125%2C0z%20M24%2C9h-6.537C18.416%2C10.063%2C19%2C11.461%2C19%2C13%0D%0A%09%09c0%2C3.314-2.688%2C6-6%2C6c-3.313%2C0-6-2.686-6-6c0-1.539%2C0.584-2.938%2C1.537-4H2V4.875C2%2C3.29%2C3.29%2C2%2C4.875%2C2h16.25%0D%0A%09%09C22.711%2C2%2C24%2C3.29%2C24%2C4.875V9z%22%2F%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3C%2Fsvg%3E%0D%0A" alt=""> -->
+							Instagram
+						</a>
 					</li>
-					<li class="Navigation-listItem">
-						<a href="../pages/about.html" class="Navigation-link">About</a>
+					<li class="c-SocialList-item">
+						<a href="#" rel="me">GitHub</a>
 					</li>
-					<li class="Navigation-listItem">
-						<a href="../pages/contact.html" class="Navigation-link">Contact</a>
+					<li class="c-SocialList-item">
+						<a href="#" rel="me">Medium</a>
+					</li>
+					<li class="c-SocialList-item">
+						<a href="#" rel="me">Codepen</a>
+					</li>
+					<li class="c-SocialList-item">
+						<a href="#" rel="me">Meetup</a>
+					</li>
+					<li class="c-SocialList-item">
+						<a href="#" rel="me">
+							<!-- <img src="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2016.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Capa_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%20430.117%20430.117%22%20fill%3D%22%233A89C9%22%20style%3D%22enable-background%3Anew%200%200%20430.117%20430.117%3B%22%0D%0A%09%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cpath%20id%3D%22LinkedIn%22%20d%3D%22M430.117%2C261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707%0D%0A%09%09c-25.473%2C0-40.632%2C17.142-47.301%2C33.724c-2.432%2C5.928-3.058%2C14.179-3.058%2C22.477V420.56h-92.219c0%2C0%2C1.242-251.285%2C0-277.32h92.21%0D%0A%09%09v39.309c-0.187%2C0.294-0.43%2C0.611-0.606%2C0.896h0.606v-0.896c12.251-18.869%2C34.13-45.824%2C83.102-45.824%0D%0A%09%09C384.633%2C136.724%2C430.117%2C176.361%2C430.117%2C261.543z%20M52.183%2C9.558C20.635%2C9.558%2C0%2C30.251%2C0%2C57.463%0D%0A%09%09c0%2C26.619%2C20.038%2C47.94%2C50.959%2C47.94h0.616c32.159%2C0%2C52.159-21.317%2C52.159-47.94C103.128%2C30.251%2C83.734%2C9.558%2C52.183%2C9.558z%0D%0A%09%09%20M5.477%2C420.56h92.184v-277.32H5.477V420.56z%22%2F%3E%0D%0A%3C%2Fg%3E%0D%0A%3C%2Fsvg%3E%0D%0A" alt=""> -->
+							LinkedIn
+						</a>
 					</li>
 				</ul>
-			</nav>
-		</div>
-	
-	</header><section class="Introduction h-card">
 
-	<div class="container">
-
-		<div class="Introduction-imageContainer">
-			<img src="https://en.gravatar.com/userimage/7483785/89659c7a29dc4fac894c9d7b8f8d378d.jpg?size=200" alt="my face" class="Introduction-image u-photo">
-		</div>
-
-		<div class="Introduction-text">
-			<h1>
-				Hi, I'm <a href="../" class="u-url u-uid p-name">Paul Tibbetts</a>
-			</h1>
-
-			<span class="p-note">
-				<p>
-					I'm a front end developer at
-					<a href="https://thebluecube.com" class="p-org h-card">The Blue Cube</a> in the
-					Jewellery Quarter, <span class="p-locality">Birmingham</span> <span class="p-country-name">UK</span>
-				</p>
-
-				<p>
-					I write both <a href="../pages/articles.html">long</a> and
-					 <a href="../pages/notes.html">short</a> things as well as
-					 <a href="../pages/links.html">share links</a> to stuff
-				</p>
-			</span>
-
-			<p>
-				<a href="mailto:email@paultibbetts.uk" class="u-email">email@paultibbetts.uk</a>
-			</p>
-
-			<ul class="SocialList inline-list">
-				<li class="SocialList-item">
-					<a href="#" rel="me">
-						<!-- <img src="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2018.1.1%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Capa_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20fill%3D%22%233A89C9%22%20width%3D%2220px%22%20height%3D%2220px%22%0D%0A%09%20viewBox%3D%220%200%20612%20612%22%20style%3D%22enable-background%3Anew%200%200%20612%20612%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cg%3E%0D%0A%09%09%3Cpath%20style%3D%22fill%3A%233A89C9%3B%22%20d%3D%22M612%2C116.258c-22.525%2C9.981-46.694%2C16.75-72.088%2C19.772c25.929-15.527%2C45.777-40.155%2C55.184-69.411%0D%0A%09%09%09c-24.322%2C14.379-51.169%2C24.82-79.775%2C30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334%2C0-125.551%2C56.217-125.551%2C125.513%0D%0A%09%09%09c0%2C9.828%2C1.109%2C19.427%2C3.251%2C28.606C197.065%2C206.32%2C104.556%2C156.337%2C42.641%2C80.386c-10.823%2C18.51-16.98%2C40.078-16.98%2C63.101%0D%0A%09%09%09c0%2C43.559%2C22.181%2C81.993%2C55.835%2C104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0%2C60.806%2C43.291%2C111.554%2C100.693%2C123.104%0D%0A%09%09%09c-10.517%2C2.83-21.607%2C4.398-33.08%2C4.398c-8.107%2C0-15.947-0.803-23.634-2.333c15.985%2C49.907%2C62.336%2C86.199%2C117.253%2C87.194%0D%0A%09%09%09c-42.947%2C33.654-97.099%2C53.655-155.916%2C53.655c-10.134%2C0-20.116-0.612-29.944-1.721c55.567%2C35.681%2C121.536%2C56.485%2C192.438%2C56.485%0D%0A%09%09%09c230.948%2C0%2C357.188-191.291%2C357.188-357.188l-0.421-16.253C573.872%2C163.526%2C595.211%2C141.422%2C612%2C116.258z%22%2F%3E%0D%0A%09%3C%2Fg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3C%2Fsvg%3E%0D%0A"> -->
-						Twitter
-					</a>
-				</li>
-				<li class="SocialList-item">
-					<a href="#" rel="me">Birmingham.io</a>
-				</li>
-				<li class="SocialList-item">
-					<a href="#" rel="me">
-						<!-- <img src="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2018.1.1%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Capa_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20fill%3D%22%233A89C9%22%20width%3D%2220px%22%20height%3D%2220px%22%0D%0A%09%20viewBox%3D%220%200%2026%2026%22%20style%3D%22enable-background%3Anew%200%200%2026%2026%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cpath%20style%3D%22fill%3A%233A89C9%3B%22%20d%3D%22M20%2C7c-0.551%2C0-1-0.449-1-1V4c0-0.551%2C0.449-1%2C1-1h2c0.551%2C0%2C1%2C0.449%2C1%2C1v2c0%2C0.551-0.449%2C1-1%2C1H20z%0D%0A%09%09%22%2F%3E%0D%0A%09%3Cpath%20style%3D%22fill%3A%233A89C9%3B%22%20d%3D%22M13%2C9.188c-0.726%2C0-1.396%2C0.213-1.973%2C0.563c0.18-0.056%2C0.367-0.093%2C0.564-0.093%0D%0A%09%09c1.068%2C0%2C1.933%2C0.865%2C1.933%2C1.934c0%2C1.066-0.865%2C1.933-1.933%2C1.933s-1.933-0.866-1.933-1.933c0-0.199%2C0.039-0.386%2C0.094-0.565%0D%0A%09%09C9.4%2C11.604%2C9.188%2C12.274%2C9.188%2C13c0%2C2.107%2C1.705%2C3.813%2C3.813%2C3.813c2.105%2C0%2C3.813-1.705%2C3.813-3.813S15.105%2C9.188%2C13%2C9.188z%22%2F%3E%0D%0A%09%3Cg%3E%0D%0A%09%09%3Cpath%20style%3D%22fill%3A%233A89C9%3B%22%20d%3D%22M13%2C7c3.313%2C0%2C6%2C2.686%2C6%2C6s-2.688%2C6-6%2C6c-3.313%2C0-6-2.686-6-6S9.687%2C7%2C13%2C7%20M13%2C5%0D%0A%09%09%09c-4.411%2C0-8%2C3.589-8%2C8s3.589%2C8%2C8%2C8s8-3.589%2C8-8S17.411%2C5%2C13%2C5L13%2C5z%22%2F%3E%0D%0A%09%3C%2Fg%3E%0D%0A%09%3Cpath%20style%3D%22fill%3A%233A89C9%3B%22%20d%3D%22M21.125%2C0H4.875C2.182%2C0%2C0%2C2.182%2C0%2C4.875v16.25C0%2C23.818%2C2.182%2C26%2C4.875%2C26h16.25%0D%0A%09%09C23.818%2C26%2C26%2C23.818%2C26%2C21.125V4.875C26%2C2.182%2C23.818%2C0%2C21.125%2C0z%20M24%2C9h-6.537C18.416%2C10.063%2C19%2C11.461%2C19%2C13%0D%0A%09%09c0%2C3.314-2.688%2C6-6%2C6c-3.313%2C0-6-2.686-6-6c0-1.539%2C0.584-2.938%2C1.537-4H2V4.875C2%2C3.29%2C3.29%2C2%2C4.875%2C2h16.25%0D%0A%09%09C22.711%2C2%2C24%2C3.29%2C24%2C4.875V9z%22%2F%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3Cg%3E%0D%0A%3C%2Fg%3E%0D%0A%3C%2Fsvg%3E%0D%0A" alt=""> -->
-						Instagram
-					</a>
-				</li>
-				<li class="SocialList-item">
-					<a href="#" rel="me">GitHub</a>
-				</li>
-				<li class="SocialList-item">
-					<a href="#" rel="me">Medium</a>
-				</li>
-				<li class="SocialList-item">
-					<a href="#" rel="me">Codepen</a>
-				</li>
-				<li class="SocialList-item">
-					<a href="#" rel="me">Meetup</a>
-				</li>
-				<li class="SocialList-item">
-					<a href="#" rel="me">
-						<!-- <img src="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2016.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Capa_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%20430.117%20430.117%22%20fill%3D%22%233A89C9%22%20style%3D%22enable-background%3Anew%200%200%20430.117%20430.117%3B%22%0D%0A%09%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cpath%20id%3D%22LinkedIn%22%20d%3D%22M430.117%2C261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707%0D%0A%09%09c-25.473%2C0-40.632%2C17.142-47.301%2C33.724c-2.432%2C5.928-3.058%2C14.179-3.058%2C22.477V420.56h-92.219c0%2C0%2C1.242-251.285%2C0-277.32h92.21%0D%0A%09%09v39.309c-0.187%2C0.294-0.43%2C0.611-0.606%2C0.896h0.606v-0.896c12.251-18.869%2C34.13-45.824%2C83.102-45.824%0D%0A%09%09C384.633%2C136.724%2C430.117%2C176.361%2C430.117%2C261.543z%20M52.183%2C9.558C20.635%2C9.558%2C0%2C30.251%2C0%2C57.463%0D%0A%09%09c0%2C26.619%2C20.038%2C47.94%2C50.959%2C47.94h0.616c32.159%2C0%2C52.159-21.317%2C52.159-47.94C103.128%2C30.251%2C83.734%2C9.558%2C52.183%2C9.558z%0D%0A%09%09%20M5.477%2C420.56h92.184v-277.32H5.477V420.56z%22%2F%3E%0D%0A%3C%2Fg%3E%0D%0A%3C%2Fsvg%3E%0D%0A" alt=""> -->
-						LinkedIn
-					</a>
-				</li>
-			</ul>
+			</div>
 
 		</div>
 
@@ -123,7 +138,7 @@
 </section>
 <main>
   <div class="row">
-    <div class="container">
+    <div class="l-container">
 
       <!-- <h4>I'm currently working on</h4>
 
@@ -131,23 +146,25 @@
         <li>A styleguide for my personal website</li>
       </ul> -->
 
-      <div class="Posts Posts--recent">
+      <div class="c-Posts c-Posts--recent">
       
-      	<h2 class="Posts-header">Latest Articles</h2>
+      	<h2 class="c-Posts-header">Latest Articles</h2>
       
-      	<ul class="list-of-links">
+      	<ul class="o-listOfLinks">
       
       			<li>
-      				<div class="Article teaser">
+      				<div class="o-teaser">
       				
-      				  <a href="../pages/article.html" class="Article-link teaser-link">
+      				  <a href="../pages/article.html" class="Article-link o-teaser-link">
       				
       				    A Modern WordPress Workflow
       				
-      				    <div class="teaser-meta">
+      				    <div class="o-teaser-meta">
       				
-      				      <time class="timestamp dt-published" datetime="2016-02-04 12:00:00">2 days ago</time>
-      				      <ul class="inline-list">
+      				      <time class="o-timestamp dt-published" datetime="2016-02-04 12:00:00">
+      				        2 days ago
+      				      </time>
+      				      <ul class="u-listInline">
       				            <li>#wordpress</li>
       				      </ul>
       				
@@ -159,16 +176,18 @@
       
       
       			<li>
-      				<div class="Article teaser">
+      				<div class="o-teaser">
       				
-      				  <a href="../pages/article.html" class="Article-link teaser-link">
+      				  <a href="../pages/article.html" class="Article-link o-teaser-link">
       				
       				    Laravel Birmingham
       				
-      				    <div class="teaser-meta">
+      				    <div class="o-teaser-meta">
       				
-      				      <time class="timestamp dt-published" datetime="2016-02-04 12:00:00">3 days ago</time>
-      				      <ul class="inline-list">
+      				      <time class="o-timestamp dt-published" datetime="2016-02-04 12:00:00">
+      				        3 days ago
+      				      </time>
+      				      <ul class="u-listInline">
       				            <li>#laravel birmingham</li>
       				            <li>#laravel</li>
       				            <li>#meetup</li>
@@ -182,16 +201,18 @@
       
       
       			<li>
-      				<div class="Article teaser">
+      				<div class="o-teaser">
       				
-      				  <a href="../pages/article.html" class="Article-link teaser-link">
+      				  <a href="../pages/article.html" class="Article-link o-teaser-link">
       				
       				    Homebrew Website Club Birmingham
       				
-      				    <div class="teaser-meta">
+      				    <div class="o-teaser-meta">
       				
-      				      <time class="timestamp dt-published" datetime="2016-02-04 12:00:00">about 1 week ago</time>
-      				      <ul class="inline-list">
+      				      <time class="o-timestamp dt-published" datetime="2016-02-04 12:00:00">
+      				        about 1 week ago
+      				      </time>
+      				      <ul class="u-listInline">
       				            <li>#hbwcb</li>
       				            <li>#meetup</li>
       				      </ul>
@@ -204,16 +225,18 @@
       
       
       			<li>
-      				<div class="Article teaser">
+      				<div class="o-teaser">
       				
-      				  <a href="../pages/article.html" class="Article-link teaser-link">
+      				  <a href="../pages/article.html" class="Article-link o-teaser-link">
       				
       				    Now online at paultibbetts.uk
       				
-      				    <div class="teaser-meta">
+      				    <div class="o-teaser-meta">
       				
-      				      <time class="timestamp dt-published" datetime="2016-02-04 12:00:00">about 2 weeks ago</time>
-      				      <ul class="inline-list">
+      				      <time class="o-timestamp dt-published" datetime="2016-02-04 12:00:00">
+      				        about 2 weeks ago
+      				      </time>
+      				      <ul class="u-listInline">
       				            <li>#personal</li>
       				      </ul>
       				
@@ -225,16 +248,18 @@
       
       
       			<li>
-      				<div class="Article teaser">
+      				<div class="o-teaser">
       				
-      				  <a href="../pages/article.html" class="Article-link teaser-link">
+      				  <a href="../pages/article.html" class="Article-link o-teaser-link">
       				
       				    Personal Reboot
       				
-      				    <div class="teaser-meta">
+      				    <div class="o-teaser-meta">
       				
-      				      <time class="timestamp dt-published" datetime="2016-02-04 12:00:00">about 2 weeks ago</time>
-      				      <ul class="inline-list">
+      				      <time class="o-timestamp dt-published" datetime="2016-02-04 12:00:00">
+      				        about 2 weeks ago
+      				      </time>
+      				      <ul class="u-listInline">
       				            <li>#personal</li>
       				      </ul>
       				
@@ -246,26 +271,28 @@
       
       	</ul>
       
-      	<a href="../pages/articles.html" class="Posts-allLink">All Articles</a>
+      	<a href="../pages/articles.html" class="c-Posts-allLink">All Articles</a>
       
       </div>
-      <div class="Posts Posts--recent">
+      <div class="c-Posts c-Posts--recent">
       
-      	<h2 class="Posts-header">Latest Notes</h2>
+      	<h2 class="c-Posts-header">Latest Notes</h2>
       
-      	<ul class="list-of-links">
+      	<ul class="o-listOfLinks">
       
       			<li>
-      				<div class="Note teaser">
+      				<div class="o-teaser">
       				
-      				  <a href="../pages/note.html" class="teaser-link">
+      				  <a href="../pages/note.html" class="o-teaser-link">
       				
       				    Ready for the @GatherContent webinar
       				
-      				    <div class="teaser-meta">
+      				    <div class="o-teaser-meta">
       				
-      				      <time class="timestamp dt-published" datetime="2016-02-04 12:00:00">12 minutes ago</time>
-      				      <ul class="inline-list">
+      				      <time class="o-timestamp dt-published" datetime="2016-02-04 12:00:00">
+      				        12 minutes ago
+      				      </time>
+      				      <ul class="u-listInline">
       				      </ul>
       				
       				    </div>
@@ -275,16 +302,18 @@
       
       
       			<li>
-      				<div class="Note teaser">
+      				<div class="o-teaser">
       				
-      				  <a href="../pages/note.html" class="teaser-link">
+      				  <a href="../pages/note.html" class="o-teaser-link">
       				
       				    #Firefox disables Flash by default
       				
-      				    <div class="teaser-meta">
+      				    <div class="o-teaser-meta">
       				
-      				      <time class="timestamp dt-published" datetime="2016-02-04 12:00:00">about 24 hours ago</time>
-      				      <ul class="inline-list">
+      				      <time class="o-timestamp dt-published" datetime="2016-02-04 12:00:00">
+      				        about 24 hours ago
+      				      </time>
+      				      <ul class="u-listInline">
       				            <li>#firefox</li>
       				            <li>#flash</li>
       				      </ul>
@@ -296,16 +325,18 @@
       
       
       			<li>
-      				<div class="Note teaser">
+      				<div class="o-teaser">
       				
-      				  <a href="../pages/note.html" class="teaser-link">
+      				  <a href="../pages/note.html" class="o-teaser-link">
       				
       				    Thoroughly enjoyed @indiewebcamp Brighton. Massive thank you to @adactio and @lottejackson for hosting it and everyone else for taking part
       				
-      				    <div class="teaser-meta">
+      				    <div class="o-teaser-meta">
       				
-      				      <time class="timestamp dt-published" datetime="2016-02-04 12:00:00">12/06/15</time>
-      				      <ul class="inline-list">
+      				      <time class="o-timestamp dt-published" datetime="2016-02-04 12:00:00">
+      				        12/06/15
+      				      </time>
+      				      <ul class="u-listInline">
       				            <li>#indieweb</li>
       				      </ul>
       				
@@ -316,16 +347,18 @@
       
       
       			<li>
-      				<div class="Note teaser">
+      				<div class="o-teaser">
       				
-      				  <a href="../pages/note.html" class="teaser-link">
+      				  <a href="../pages/note.html" class="o-teaser-link">
       				
       				    I&#x27;m liking the Fleet Street Food Feast-ival. It&#x27;s almost Digbeth Dining Club for the JQ
       				
-      				    <div class="teaser-meta">
+      				    <div class="o-teaser-meta">
       				
-      				      <time class="timestamp dt-published" datetime="2016-02-04 12:00:00">11/05/15</time>
-      				      <ul class="inline-list">
+      				      <time class="o-timestamp dt-published" datetime="2016-02-04 12:00:00">
+      				        11/05/15
+      				      </time>
+      				      <ul class="u-listInline">
       				      </ul>
       				
       				    </div>
@@ -335,16 +368,18 @@
       
       
       			<li>
-      				<div class="Note teaser">
+      				<div class="o-teaser">
       				
-      				  <a href="../pages/note.html" class="teaser-link">
+      				  <a href="../pages/note.html" class="o-teaser-link">
       				
       				    RT If you&#x27;re interested in #Laravel Dev why not pop along to the Birmingham Laravel meetup this evening @thebluecube HQ meetup.com/Laravel-Birm…
       				
-      				    <div class="teaser-meta">
+      				    <div class="o-teaser-meta">
       				
-      				      <time class="timestamp dt-published" datetime="2016-02-04 12:00:00">10/05/15</time>
-      				      <ul class="inline-list">
+      				      <time class="o-timestamp dt-published" datetime="2016-02-04 12:00:00">
+      				        10/05/15
+      				      </time>
+      				      <ul class="u-listInline">
       				            <li>#laravel birmingham</li>
       				            <li>#meetup</li>
       				            <li>#laravel</li>
@@ -357,26 +392,28 @@
       
       	</ul>
       
-      	<a href="../pages/notes.html" class="Posts-allLink">All Notes</a>
+      	<a href="../pages/notes.html" class="c-Posts-allLink">All Notes</a>
       
       </div>
-      <div class="Posts Posts--recent">
+      <div class="c-Posts c-Posts--recent">
       
-      	<h2 class="Posts-header">Latest Links</h2>
+      	<h2 class="c-Posts-header">Latest Links</h2>
       
-      	<ul class="list-of-links">
+      	<ul class="o-listOfLinks">
       
       			<li>
-      				<div class="Link teaser">
+      				<div class="o-teaser">
       				
-      				  <a href="../pages/link.html" class="teaser-link">
+      				  <a href="../pages/link.html" class="o-teaser-link">
       				
       				    Cosmic Ordering
       				
-      				    <div class="teaser-meta">
+      				    <div class="o-teaser-meta">
       				
-      				      <time class="timestamp dt-published" datetime="2016-02-04 12:00:00">42 minutes ago</time>
-      				      <ul class="inline-list">
+      				      <time class="o-timestamp dt-published" datetime="2016-02-04 12:00:00">
+      				        42 minutes ago
+      				      </time>
+      				      <ul class="u-listInline">
       				      </ul>
       				
       				    </div>
@@ -387,16 +424,18 @@
       
       
       			<li>
-      				<div class="Link teaser">
+      				<div class="o-teaser">
       				
-      				  <a href="../pages/link.html" class="teaser-link">
+      				  <a href="../pages/link.html" class="o-teaser-link">
       				
       				    Make a $10k WordPress site in 3 hours
       				
-      				    <div class="teaser-meta">
+      				    <div class="o-teaser-meta">
       				
-      				      <time class="timestamp dt-published" datetime="2016-02-04 12:00:00">about 3 hours ago</time>
-      				      <ul class="inline-list">
+      				      <time class="o-timestamp dt-published" datetime="2016-02-04 12:00:00">
+      				        about 3 hours ago
+      				      </time>
+      				      <ul class="u-listInline">
       				            <li>#wordpress</li>
       				            <li>#tutorial</li>
       				      </ul>
@@ -409,16 +448,18 @@
       
       
       			<li>
-      				<div class="Link teaser">
+      				<div class="o-teaser">
       				
-      				  <a href="../pages/link.html" class="teaser-link">
+      				  <a href="../pages/link.html" class="o-teaser-link">
       				
       				    Insanely complete Ansible playbook, showing off all the options
       				
-      				    <div class="teaser-meta">
+      				    <div class="o-teaser-meta">
       				
-      				      <time class="timestamp dt-published" datetime="2016-02-04 12:00:00">about 2 days ago</time>
-      				      <ul class="inline-list">
+      				      <time class="o-timestamp dt-published" datetime="2016-02-04 12:00:00">
+      				        about 2 days ago
+      				      </time>
+      				      <ul class="u-listInline">
       				            <li>#ansible</li>
       				            <li>#devops</li>
       				      </ul>
@@ -431,16 +472,18 @@
       
       
       			<li>
-      				<div class="Link teaser">
+      				<div class="o-teaser">
       				
-      				  <a href="../pages/link.html" class="teaser-link">
+      				  <a href="../pages/link.html" class="o-teaser-link">
       				
       				    JavaScript for WordPress Master Course
       				
-      				    <div class="teaser-meta">
+      				    <div class="o-teaser-meta">
       				
-      				      <time class="timestamp dt-published" datetime="2016-02-04 12:00:00">about 1 week ago</time>
-      				      <ul class="inline-list">
+      				      <time class="o-timestamp dt-published" datetime="2016-02-04 12:00:00">
+      				        about 1 week ago
+      				      </time>
+      				      <ul class="u-listInline">
       				            <li>#javascript</li>
       				            <li>#wordpress</li>
       				            <li>#tutorial</li>
@@ -454,16 +497,18 @@
       
       
       			<li>
-      				<div class="Link teaser">
+      				<div class="o-teaser">
       				
-      				  <a href="../pages/link.html" class="teaser-link">
+      				  <a href="../pages/link.html" class="o-teaser-link">
       				
       				    Paul Graham on Doing Things Right by Accident
       				
-      				    <div class="teaser-meta">
+      				    <div class="o-teaser-meta">
       				
-      				      <time class="timestamp dt-published" datetime="2016-02-04 12:00:00">about 2 weeks ago</time>
-      				      <ul class="inline-list">
+      				      <time class="o-timestamp dt-published" datetime="2016-02-04 12:00:00">
+      				        about 2 weeks ago
+      				      </time>
+      				      <ul class="u-listInline">
       				      </ul>
       				
       				    </div>
@@ -474,7 +519,7 @@
       
       	</ul>
       
-      	<a href="../pages/links.html" class="Posts-allLink">All Links</a>
+      	<a href="../pages/links.html" class="c-Posts-allLink">All Links</a>
       
       </div>
 
@@ -482,17 +527,18 @@
   </div>
 </main>
 
-<footer class="Footer">
-	<div class="container">
+<footer class="c-Footer u-stickyFooter">
+	<div class="l-container l-container--fluid l u-flexJustify--end">
 		<!-- <a href="#">View the source code on GitHub</a> -->
-		<span style="margin-left: auto"><a href="mailto:email@paultibbetts.uk">@paultibbetts.uk</a></span>
-	</div>
+		<span class="c-Signature">
+		  <a href="mailto:email@paultibbetts.uk">@paultibbetts.uk</a>
+		</span>	</div>
 </footer>
 
 
 
 	<!-- toolkit scripts -->
-		<script src="../assets/toolkit/scripts/toolkit.js"></script>
+	<script src="../assets/toolkit/scripts/toolkit.js"></script>
 	<!-- /toolkit scripts -->
 
 </body>

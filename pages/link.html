@@ -11,103 +11,116 @@
 	
 
 	<!-- toolkit styles -->
-		<link rel="stylesheet" href="../assets/toolkit/styles/toolkit.css">
+	<link rel="stylesheet" href="../assets/toolkit/styles/generic.css">
+	<link rel="stylesheet" href="../assets/toolkit/styles/base.css">
+	<link rel="stylesheet" href="../assets/toolkit/styles/objects.css">
+	<link rel="stylesheet" href="../assets/toolkit/styles/components.css">
+	<link rel="stylesheet" href="../assets/toolkit/styles/utilities.css">
 	<!-- /toolkit styles -->
 
 </head>
 <body>
 
 
-	<header class="Header" role="banner">
+	<header class="c-Header" role="banner">
 	
-		<div class="container container--fluid">
+		<div class="l l-container l-container--fluid">
 	
-			<a href="../pages/index.html" class="Brand">
-				<div class="Logo-padding">
-				  <img src="https://secure.gravatar.com/avatar/36790fabdc80d52c19e45c2df8acb55a" alt="my face" class="Logo">
-				</div>		</a>
+			<div class="l-i u-1/2">
 	
-			<nav class="Navigation">
-				<ul class="Navigation-list">
-					<li class="Navigation-listItem">
-						<a href="../pages/articles.html" class="Navigation-link">Articles</a>
-					</li>
-					<li class="Navigation-listItem">
-						<a href="../pages/notes.html" class="Navigation-link">Notes</a>
-					</li>
-					<li class="Navigation-listItem">
-						<a href="../pages/links.html" class="Navigation-link">Links</a>
-					</li>
-					<li class="Navigation-listItem">
-						<a href="../pages/about.html" class="Navigation-link">About</a>
-					</li>
-					<li class="Navigation-listItem">
-						<a href="../pages/contact.html" class="Navigation-link">Contact</a>
-					</li>
-				</ul>
-			</nav>
+				<a href="../pages/index.html" class="Brand">
+					<div class="c-Logo-padding">
+					  <img src="https://secure.gravatar.com/avatar/36790fabdc80d52c19e45c2df8acb55a" alt="my face" class="c-Logo">
+					</div>			</a>
+	
+			</div>
+	
+			<div class="l-i u-1/2 u-flex u-flexAlign--end u-flexJustify--center u-flexColumn">
+	
+				<nav class="c-Navigation">
+					<ul class="c-Navigation-list">
+						<li class="c-Navigation-listItem">
+							<a href="../pages/articles.html" class="c-Navigation-link">Articles</a>
+						</li>
+						<li class="c-Navigation-listItem">
+							<a href="../pages/notes.html" class="c-Navigation-link">Notes</a>
+						</li>
+						<li class="c-Navigation-listItem">
+							<a href="../pages/links.html" class="c-Navigation-link">Links</a>
+						</li>
+						<li class="c-Navigation-listItem">
+							<a href="../pages/about.html" class="c-Navigation-link">About</a>
+						</li>
+						<li class="c-Navigation-listItem">
+							<a href="../pages/contact.html" class="c-Navigation-link">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+	
 		</div>
 	
 	</header>
 
 	<main role="main">
-  <div class="row">
-    <div class="container">
-      <article class="Link Link--single h-entry">
-      
-        <h1 class="p-name">
-          <a href="http://javascriptforwp.com/">
-            JavaScript for WordPress Master Course
-          </a>
-        </h1>
-      
-        <p class="e-content">
-          I heard about Zac's JavaScript course at the <a href="https://thebluecube.com/roots-london-meetup/">Roots London Meetup</a> and managed to get an early bird discount.
-        </p>
-      
-      
-        <footer>
-          <div class="Post-meta">
-      
-            <span class="Post-metaName">Published:&nbsp;</span>
-            <time class="timestamp dt-published" datetime="2016-02-04 12:00:00">28/01/16</time>      <span class="Post-byline">by <a href="https://paultibbetts.uk" class="p-author h-card">
-        <img src="https://secure.gravatar.com/avatar/36790fabdc80d52c19e45c2df8acb55a" alt="Paul Tibbetts" class="u-photo">
-      </a></span>
-      
-            <div class="Post-tagsContainer">
-      
-              <span class="Post-metaName">Tagged:</span>
-      
-              <ul class="Post-tags inline-list">
-                    <li class="Post-tag">
-                      <a href="#" class="Post-tagLink p-category">javascript</a></li>
-                    <li class="Post-tag">
-                      <a href="#" class="Post-tagLink p-category">wordpress</a></li>
-                    <li class="Post-tag">
-                      <a href="#" class="Post-tagLink p-category">tutorial</a></li>
-              </ul>
-            </div>
-      
-            <span class="Post-metaName">Permalink:</span>
-      
-            <a href="#" class="Post-permalink u-url" rel="bookmark">
-              https://paultibbetts.uk/links/javascript-for-wordpress-master-course/
+    <div class="l-container u-mt++">
+        <article class="c-Post h-entry">
+        
+          <h1 class="p-name">
+            <a href="http://javascriptforwp.com/">
+              JavaScript for WordPress Master Course
             </a>
-      
-          </div>
-        </footer>
-      
-      </article>    </div>
-  </div>
+          </h1>
+        
+          <p class="e-content">
+            I heard about Zac's JavaScript course at the <a href="https://thebluecube.com/roots-london-meetup/">Roots London Meetup</a> and managed to get an early bird discount.
+          </p>
+        
+        
+          <footer>
+            <div class="c-Post-meta">
+        
+              <span class="c-Post-metaName">Published:&nbsp;</span>
+              <time class="o-timestamp dt-published" datetime="2016-02-04 12:00:00">
+                28/01/16
+              </time>      <span class="c-Post-byline">by <a href="https://paultibbetts.uk" class="p-author h-card">
+          <img src="https://secure.gravatar.com/avatar/36790fabdc80d52c19e45c2df8acb55a" alt="Paul Tibbetts" class="u-photo">
+        </a></span>
+        
+              <div class="c-Post-tagsContainer">
+        
+                <span class="c-Post-metaName">Tagged:</span>
+        
+                <ul class="c-Post-tags u-listInline">
+                      <li class="c-Post-tag">
+                        <a href="#" class="c-Post-tagLink p-category">javascript</a></li>
+                      <li class="c-Post-tag">
+                        <a href="#" class="c-Post-tagLink p-category">wordpress</a></li>
+                      <li class="c-Post-tag">
+                        <a href="#" class="c-Post-tagLink p-category">tutorial</a></li>
+                </ul>
+              </div>
+        
+              <span class="c-Post-metaName">Permalink:</span>
+        
+              <a href="#" class="c-Post-permalink u-url" rel="bookmark">
+                https://paultibbetts.uk/links/javascript-for-wordpress-master-course/
+              </a>
+        
+            </div>
+          </footer>
+        
+        </article>    </div>
 </main>
 
 
 
-	<footer class="Footer">
-		<div class="container">
+	<footer class="c-Footer u-stickyFooter">
+		<div class="l-container l-container--fluid l u-flexJustify--end">
 			<!-- <a href="#">View the source code on GitHub</a> -->
-			<span style="margin-left: auto"><a href="mailto:email@paultibbetts.uk">@paultibbetts.uk</a></span>
-		</div>
+			<span class="c-Signature">
+			  <a href="mailto:email@paultibbetts.uk">@paultibbetts.uk</a>
+			</span>	</div>
 	</footer>
 
 

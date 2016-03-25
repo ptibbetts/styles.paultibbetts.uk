@@ -281,13 +281,13 @@
 
 
 	
-<h1 data-f-toggle="labels">Objects</h1>
+<h1 data-f-toggle="labels">Base</h1>
 
 
-<div class="f-item-group" id="byline">
+<div class="f-item-group" id="01-document">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Byline</h2>
+		<h2 class="f-item-heading">Document</h2>
 		<div class="f-item-controls">
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 				<svg>
@@ -296,72 +296,20 @@
 			</span>
 		</div>
 	</div><div class="f-item-preview">
-	by
-<a href="https://paultibbetts.uk" class="p-author h-card">
-	<img src="https://secure.gravatar.com/avatar/36790fabdc80d52c19e45c2df8acb55a" alt="Paul Tibbetts" class="u-photo">
-</a>
+	
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">by
-&lt;a href=&quot;https://paultibbetts.uk&quot; class=&quot;p-author h-card&quot;&gt;
-	&lt;img src=&quot;https://secure.gravatar.com/avatar/36790fabdc80d52c19e45c2df8acb55a&quot; alt=&quot;Paul Tibbetts&quot; class=&quot;u-photo&quot;&gt;
-&lt;/a&gt;</code></pre>
+	<pre><code class="language-markup"></code></pre>
 </div>
 
 
 </div>
 
 
-<div class="f-item-group" id="inline-list">
+<div class="f-item-group" id="02-layout">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Inline List</h2>
-		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-	</div><div class="f-item-preview">
-	<h3>An inline list is good for:</h3>
-
-<ul class="u-listInline">
-	<li>being pedantic yet visually appealing</li>
-	<li>listing things next to each other</li>
-	<li>things like the nav and the social icons on the home page</li>
-</ul>
-
-<h3>An inline list is not good for:</h3>
-
-<ul class="u-listInline">
-	<li>documenting styleguides</li>
-</ul>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;h3&gt;An inline list is good for:&lt;/h3&gt;
-
-&lt;ul class=&quot;u-listInline&quot;&gt;
-	&lt;li&gt;being pedantic yet visually appealing&lt;/li&gt;
-	&lt;li&gt;listing things next to each other&lt;/li&gt;
-	&lt;li&gt;things like the nav and the social icons on the home page&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;An inline list is not good for:&lt;/h3&gt;
-
-&lt;ul class=&quot;u-listInline&quot;&gt;
-	&lt;li&gt;documenting styleguides&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-</div>
-
-
-</div>
-
-
-<div class="f-item-group" id="teaser">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Teaser</h2>
+		<h2 class="f-item-heading">Layout</h2>
 		<div class="f-item-controls">
 			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
 				<svg>
@@ -375,53 +323,27 @@
 			</span>
 		</div>
 	</div><div class="f-item-notes" data-f-toggle="notes">
-	<p><a href="http://speakersfive.co.uk">@speakersfive</a> referred to some links as o-teasers once and it's stuck ever since</p>
+	<p>A container contains stuff within a maximum width, usually some attempt at
+&quot;optimum for user reading distance&quot; however no real science has ever been
+done.</p>
 
 </div>
 <div class="f-item-preview">
-	<div class="o-teaser">
-
-	<a href="#" class="o-teaser-link">
-
-    Homebrew Website Club Birmingham
-
-    <div class="o-teaser-meta">
-
-      <time class="o-timestamp dt-published" datetime="2016-02-04 12:00:00">
-        2 days ago
-      </time>
-      <ul class="u-listInline">
-            <li>#hbwcb</li>
-            <li>#meetup</li>
-      </ul>
-
-    </div>
-
-  </a>
-
+	<div class="l-container">
+	<pre>
+    &lt;div class="l-container"&gt;<br />
+      stuff<br />
+    &lt;/div&gt;<br />
+  </pre>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class=&quot;o-teaser&quot;&gt;
-
-	&lt;a href=&quot;#&quot; class=&quot;o-teaser-link&quot;&gt;
-
-    Homebrew Website Club Birmingham
-
-    &lt;div class=&quot;o-teaser-meta&quot;&gt;
-
-      &lt;time class=&quot;o-timestamp dt-published&quot; datetime=&quot;2016-02-04 12:00:00&quot;&gt;
-        2 days ago
-      &lt;/time&gt;
-      &lt;ul class=&quot;u-listInline&quot;&gt;
-            &lt;li&gt;#hbwcb&lt;/li&gt;
-            &lt;li&gt;#meetup&lt;/li&gt;
-      &lt;/ul&gt;
-
-    &lt;/div&gt;
-
-  &lt;/a&gt;
-
+	<pre><code class="language-markup">&lt;div class=&quot;l-container&quot;&gt;
+	&lt;pre&gt;
+    &amp;lt;div class=&quot;l-container&quot;&amp;gt;&lt;br /&gt;
+      stuff&lt;br /&gt;
+    &amp;lt;/div&amp;gt;&lt;br /&gt;
+  &lt;/pre&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -429,10 +351,10 @@
 </div>
 
 
-<div class="f-item-group" id="timestamp">
+<div class="f-item-group" id="03-typography">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Timestamp</h2>
+		<h2 class="f-item-heading">Typography</h2>
 		<div class="f-item-controls">
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 				<svg>
@@ -441,14 +363,98 @@
 			</span>
 		</div>
 	</div><div class="f-item-preview">
-	<time class="o-timestamp dt-published" datetime="2016-02-04 12:00:00">
-  2 days ago
-</time>
+	
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;time class=&quot;o-timestamp dt-published&quot; datetime=&quot;2016-02-04 12:00:00&quot;&gt;
-  2 days ago
-&lt;/time&gt;</code></pre>
+	<pre><code class="language-markup"></code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="04-elements">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Elements</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-preview">
+	
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup"></code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="05-media">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Media</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-preview">
+	
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup"></code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="06-links">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Links</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-preview">
+	
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup"></code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="07-lists">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Lists</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-preview">
+	
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup"></code></pre>
 </div>
 
 
