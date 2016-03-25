@@ -8,7 +8,7 @@
   "scripts": {
     "gulp": "gulp",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "node_modules/gh-pages/bin/gh-pages -d dist",
     "setup": "npm install",
     "prebuild": "npm run setup",
     "build": "gulp",
@@ -45,6 +45,7 @@
     "cssnano": "^3.5.2",
     "del": "^2.2.0",
     "fabricator-assemble": "^1.1.10",
+    "gh-pages": "^0.11.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-csso": "^1.1.0",
