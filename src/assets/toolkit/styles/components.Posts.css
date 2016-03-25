@@ -1,11 +1,11 @@
 @import "./variables";
 
-@component Posts {
+@component c-Posts {
   margin-bottom: 3rem;
 
   @descendent header {
-    .Posts--recent & {
-      color: darken($light-grey, 25);
+    .c-Posts--recent & {
+      color: $dark-grey;
       font-size: 0.75em;
       text-transform: uppercase;
     }
@@ -21,7 +21,7 @@
 
 }
 
-@component Post {
+@component c-Post {
 
   @descendent meta {
     border-top: 1px solid $faint-grey;

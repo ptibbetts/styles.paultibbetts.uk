@@ -1,6 +1,6 @@
 @import "./variables";
 
-@component Navigation {
+@component c-Navigation {
 	display: flex;
 	flex-wrap: wrap;
 
@@ -23,11 +23,11 @@
 			padding-right: 0.5em;
 
 			&:after {
-				color: lighten($black, 75);
+				color: $dark-grey;
 				content : ',';
 				position: absolute;
 					top: 0;
-				text-shadow: 1px 1px rgba(red, 0.15);
+				text-shadow: 1px 1px #D492BB;
 			}
 		}
 
@@ -35,7 +35,7 @@
 
 	@descendent link {
 		border-bottom: 1px solid $faint-grey;
-		color: lighten($black, 25);
+		color: $dark-grey;
 		text-decoration: none;
 
 		&:hover {

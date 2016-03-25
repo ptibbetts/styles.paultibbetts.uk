@@ -7,7 +7,6 @@
   "main": "README.md",
   "scripts": {
     "gulp": "gulp",
-    "prestart": "npm install",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "setup": "npm install",

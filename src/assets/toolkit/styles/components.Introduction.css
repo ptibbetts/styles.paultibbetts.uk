@@ -1,6 +1,6 @@
 @import "./variables";
 
-@component Introduction {
+@component c-Introduction {
   background: $white;
   display: flex;
   align-items: center;
@@ -10,20 +10,7 @@
   position: relative;
   z-index: 2;
 
-  flex: 1 0 auto; // sticky footer
-
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-  }
-
-  @descendent imageContainer {
-    flex: 1;
-    flex-basis: 2rem;
-    margin-right: 1rem;
-    max-width: 10rem;
-  }
+  flex: 1 0 auto; /* sticky footer */
 
   @descendent image {
     border-radius: 100%;
@@ -54,18 +41,14 @@
     }
 
     p a {
-      border-bottom: 1px solid darken($white, 10);
+      border-bottom: 1px solid $grey;
       display: inline-block;
 
       &:hover {
-        border-color: darken($white, 25);
+        border-color: $grey;
       }
     }
 
-  }
-
-  .SocialList {
-    margin-top: 0;
   }
 
 }
