@@ -1,4 +1,4 @@
-Cardigan uses a simple namespacing convention, meaningful hyphens, and capital letters to help you write and maintain your styles.
+Coat Hanger uses a simple namespacing convention, meaningful hyphens, and capital letters to help you write and maintain your styles.
 
 ### Namespaces
 
@@ -49,9 +49,6 @@ They have very specific roles and follow the SRP and often only have one declara
 Themes are prefixed with a t- and are written using camelCase.
 
 They are responsible for adding a theme to a view. This lets us know that child Components may appear differently as a result.
-
-On LHM the Youth Zone is a theme.
-
 
 #### Scope
 

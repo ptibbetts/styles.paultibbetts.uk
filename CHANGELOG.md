@@ -2,10 +2,15 @@
 This project attempts to stick to [Semantic Versioning](http://semver.org/).
 
 ## 2.0.0 2016-03-25
+
+Version 2 of the style guide uses the rules from Coat Hanger, and so class names have changed.
+See the docs for more details.
+
 ### Added
 - added Coat Hanger
   - adds, base, generic, utilities layers
   - adds namespaces
+- added docs
 - added Signature component
 
 ## 1.0.9 2016-03-16
