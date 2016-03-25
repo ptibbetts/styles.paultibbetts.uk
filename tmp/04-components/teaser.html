@@ -1,0 +1,27 @@
+<div class="Article teaser">
+
+  <a href="../pages/article.html" class="Article-link teaser-link">
+
+    {{default text toolkit.articles.recent.three.text}}
+
+    <div class="teaser-meta">
+
+      {{> timestamp}}
+
+      <ul class="inline-list">
+        {{#if tags}}
+          {{#each tags}}
+            <li>#{{this}}</li>
+          {{/each}}
+        {{^}}
+          {{#each toolkit.articles.recent.three.tags}}
+            <li>#{{this}}</li>
+          {{/each}}
+        {{/if}}
+      </ul>
+
+    </div>
+
+  </a>
+
+</div>

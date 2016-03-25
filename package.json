@@ -7,12 +7,12 @@
   "main": "README.md",
   "scripts": {
     "gulp": "gulp",
-    "prestart": "npm run setup",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "setup": "npm install",
     "prebuild": "npm run setup",
     "build": "gulp",
+    "prestart": "npm run setup",
     "start": "gulp --dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -60,7 +60,6 @@
     "postcss-atroot": "^0.1.3",
     "postcss-bem": "^0.4.1",
     "postcss-bem-linter": "^2.4.0",
-    "postcss-color-rgba-fallback": "^2.2.0",
     "postcss-css-variables": "^0.5.1",
     "postcss-current-selector": "0.0.1",
     "postcss-easy-import": "^1.0.1",

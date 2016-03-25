@@ -1,0 +1,27 @@
+<div class="Link teaser">
+
+  <a href="../pages/link.html" class="teaser-link">
+
+    {{default text toolkit.links.recent.four.text}}
+
+    <div class="teaser-meta">
+
+      {{> timestamp when=when}}
+
+      <ul class="inline-list">
+        {{#if tags}}
+          {{#each tags}}
+            <li>#{{this}}</li>
+          {{/each}}
+        {{^}}
+          {{#each toolkit.links.recent.four.tags}}
+            <li>#{{this}}</li>
+          {{/each}}
+        {{/if}}
+      </ul>
+
+    </div>
+
+  </a>
+
+</div>

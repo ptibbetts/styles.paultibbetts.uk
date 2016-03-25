@@ -1,0 +1,17 @@
+<div class="Posts Posts--recent">
+
+	<h2 class="Posts-header">Latest Links</h2>
+
+	<ul class="list-of-links">
+		{{#each toolkit.links.recent}}
+
+			<li>
+				{{> links.teaser text=this.text tags=this.tags when=this.time}}
+			</li>
+
+		{{/each}}
+	</ul>
+
+	<a href="{{baseurl}}/pages/links.html" class="Posts-allLink">All Links</a>
+
+</div>
