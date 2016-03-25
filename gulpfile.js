@@ -107,7 +107,7 @@ gulp.task('styles:toolkit', function () {
 		cssMQPacker,
 		cssnano,
 		colorguard,
-		// stylelint,
+		stylelint,
 		reporter(reporterOptions)
 	];
 
