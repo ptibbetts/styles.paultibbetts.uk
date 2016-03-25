@@ -1,4 +1,4 @@
-<article class="Article Article--single h-entry">
+<article class="c-Post h-entry">
 
   <h1 class="p-name">
     {{default title toolkit.articles.single.title}}
@@ -9,36 +9,36 @@
   </div>
 
   <footer>
-    <div class="Post-meta">
+    <div class="c-Post-meta">
 
-      <span class="Post-metaName">Published:&nbsp;</span>
+      <span class="c-Post-metaName">Published:&nbsp;</span>
 
       {{> timestamp when=toolkit.articles.single.time}}
       from <a href="#" class="p-location h-geo">{{default location toolkit.articles.single.location}}</a>
-      <span class="Post-byline">{{> byline}}</span>
+      <span class="c-Post-byline">{{> byline}}</span>
 
-      <div class="Post-tagsContainer">
+      <div class="c-Post-tagsContainer">
 
-        <span class="Post-metaName">Tagged:</span>
+        <span class="c-Post-metaName">Tagged:</span>
 
-        <ul class="Post-tags inline-list">
+        <ul class="c-Post-tags inline-list">
           {{#if tags}}
             {{#each tags}}
-              <li class="Post-tag">
-                <a href="#" class="Post-tagLink p-category">{{this}}</a></li>
+              <li class="c-Post-tag">
+                <a href="#" class="c-Post-tagLink p-category">{{this}}</a></li>
             {{/each}}
           {{^}}
             {{#each toolkit.articles.single.tags}}
-              <li class="Post-tag">
-                <a href="#" class="Post-tagLink p-category">{{this}}</a></li>
+              <li class="c-Post-tag">
+                <a href="#" class="c-Post-tagLink p-category">{{this}}</a></li>
             {{/each}}
           {{/if}}
         </ul>
       </div>
 
-      <span class="Post-metaName">Permalink:</span>
+      <span class="c-Post-metaName">Permalink:</span>
 
-      <a href="#" class="Post-link u-url" rel="bookmark">
+      <a href="#" class="c-Post-link u-url" rel="bookmark">
         https://paultibbetts.uk/2016/02/{{slugify toolkit.articles.single.title}}/
       </a>
 
