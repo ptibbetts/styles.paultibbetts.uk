@@ -1,8 +1,9 @@
 # Change Log
 This project attempts to stick to [Semantic Versioning](http://semver.org/).
 
-## Unreleased
+## 2.0.0 2016-03-25
 ### Added
+- added Coat Hanger
 - added Signature component
 
 ## 1.0.9 2016-03-16
