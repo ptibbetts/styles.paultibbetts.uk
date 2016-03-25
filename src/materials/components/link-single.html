@@ -1,0 +1,49 @@
+<article class="c-Post h-entry">
+
+  <h1 class="p-name">
+    <a href="{{default link toolkit.links.single.link}}">
+      {{{default text toolkit.links.single.title}}}
+    </a>
+  </h1>
+
+  <p class="e-content">
+    {{{default text toolkit.links.single.text}}}
+  </p>
+
+
+  <footer>
+    <div class="c-Post-meta">
+
+      <span class="c-Post-metaName">Published:&nbsp;</span>
+      {{> timestamp when=toolkit.links.single.date}}
+      <span class="c-Post-byline">{{> byline}}</span>
+
+      <div class="c-Post-tagsContainer">
+
+        <span class="c-Post-metaName">Tagged:</span>
+
+        <ul class="c-Post-tags u-listInline">
+          {{#if tags}}
+            {{#each tags}}
+              <li class="c-Post-tag">
+                <a href="#" class="c-Post-tagLink p-category">{{this}}</a></li>
+            {{/each}}
+          {{^}}
+            {{#each toolkit.links.single.tags}}
+              <li class="c-Post-tag">
+                <a href="#" class="c-Post-tagLink p-category">{{this}}</a></li>
+            {{/each}}
+          {{/if}}
+        </ul>
+      </div>
+
+      <span class="c-Post-metaName">Permalink:</span>
+
+      <a href="#" class="c-Post-permalink u-url" rel="bookmark">
+        https://paultibbetts.uk/links/{{slugify toolkit.links.single.title}}/
+      </a>
+
+    </div>
+  </footer>
+
+</article>

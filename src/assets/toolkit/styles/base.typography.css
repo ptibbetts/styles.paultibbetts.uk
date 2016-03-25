@@ -1,0 +1,23 @@
+@import "./variables";
+
+h2 {
+
+  p + & {
+    margin-top: 2em;
+  }
+}
+
+a {
+	color: $blue;
+	text-decoration: none;
+}
+
+p {
+  a {
+    border-bottom: 1px solid $faint-grey;
+
+    &:hover {
+      border-color: $light-grey;
+    }
+  }
+}

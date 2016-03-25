@@ -1,0 +1,17 @@
+@component c-SocialList {
+
+  @descendent item {
+    margin-right: 0.5em;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+  }
+
+  a {
+    border-bottom: 0;
+  }
+
+
+}

@@ -1,0 +1,48 @@
+<article class="c-Post h-entry">
+
+  <h1 class="p-name">
+    {{default text toolkit.notes.single-image.text}}
+  </h1>
+
+  <div class="e-content">
+    <img src="{{baseurl}}/{{default image toolkit.notes.single-image.image}}" alt="" class="u-roundEdges">
+  </div>
+
+  <footer>
+    <div class="c-Post-meta">
+
+      <span class="c-Post-metaName">Published:</span>
+
+      {{> timestamp when=toolkit.notes.single-image.date}}
+      from <a href="#" class="p-location h-geo">{{default location toolkit.notes.single-image.location}}</a>
+      <span class="c-Post-byline">{{> byline}}</span>
+
+      <div class="c-Post-tagsContainer">
+
+        <span class="c-Post-metaName">Tagged:</span>
+
+        <ul class="c-Post-tags u-listInline">
+          {{#if tags}}
+            {{#each tags}}
+              <li class="c-Post-tag">
+                <a href="#" class="c-Post-tagLink p-category">{{this}}</a></li>
+            {{/each}}
+          {{^}}
+            {{#each toolkit.notes.single-image.tags}}
+              <li class="c-Post-tag">
+                <a href="#" class="c-Post-tagLink p-category">{{this}}</a></li>
+            {{/each}}
+          {{/if}}
+        </ul>
+      </div>
+
+      <span class="c-Post-metaName">Permalink:</span>
+
+      <a href="#" class="c-Post-permalink u-uid u-url" rel="bookmark">
+        https://paultibbetts.uk/{{toolkit.notes.single-image.url}}/
+      </a>
+
+    </div>
+  </footer>
+
+</article>

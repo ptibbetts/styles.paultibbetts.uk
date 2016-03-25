@@ -1,0 +1,48 @@
+<article class="c-Post h-entry">
+
+  <h1 class="p-name">
+    {{default title toolkit.articles.single.title}}
+  </h1>
+
+  <div class="e-content">
+    {{{default content toolkit.articles.single.content}}}
+  </div>
+
+  <footer>
+    <div class="c-Post-meta">
+
+      <span class="c-Post-metaName">Published:&nbsp;</span>
+
+      {{> timestamp when=toolkit.articles.single.time}}
+      from <a href="#" class="p-location h-geo">{{default location toolkit.articles.single.location}}</a>
+      <span class="c-Post-byline">{{> byline}}</span>
+
+      <div class="c-Post-tagsContainer">
+
+        <span class="c-Post-metaName">Tagged:</span>
+
+        <ul class="c-Post-tags u-listInline">
+          {{#if tags}}
+            {{#each tags}}
+              <li class="c-Post-tag">
+                <a href="#" class="c-Post-tagLink p-category">{{this}}</a></li>
+            {{/each}}
+          {{^}}
+            {{#each toolkit.articles.single.tags}}
+              <li class="c-Post-tag">
+                <a href="#" class="c-Post-tagLink p-category">{{this}}</a></li>
+            {{/each}}
+          {{/if}}
+        </ul>
+      </div>
+
+      <span class="c-Post-metaName">Permalink:</span>
+
+      <a href="#" class="c-Post-link u-url" rel="bookmark">
+        https://paultibbetts.uk/2016/02/{{slugify toolkit.articles.single.title}}/
+      </a>
+
+    </div>
+  </footer>
+
+</article>
