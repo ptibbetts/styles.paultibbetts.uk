@@ -1,6 +1,6 @@
 @import "./variables";
 
-.Header {
+.c-Header {
   background: rgba( $white, 0.75);
   position: fixed;
     top: 0;

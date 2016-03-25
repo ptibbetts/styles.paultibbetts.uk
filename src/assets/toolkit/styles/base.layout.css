@@ -1,9 +1,41 @@
 .l {
+	display: flex;
+	flex-flow: row wrap;
 
-  &-container {
-    margin-left: auto;
-    margin-right: @margin-left;
-    max-width: 42rem;
-  }
+	&--g,
+	&--gutter {
+		margin: 0 -10px;
+
+		> .l-i {
+			padding: 0 10px;
+		}
+
+	}
+
+	&--rev {
+		justify-content: flex-end;
+	}
+
+	&-i {
+		flex: 0 0 100%;
+	}
+
+	&-c,
+	&-container {
+		margin: 0 auto;
+		max-width: 42rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		width: 100%;
+
+		&--fluid {
+			max-width: none;
+		}
+
+		&--narrow {
+			max-width: 50em;
+		}
+
+	}
 
 }

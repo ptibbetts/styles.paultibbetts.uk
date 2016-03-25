@@ -1,0 +1,17 @@
+<div class="c-Posts c-Posts--recent">
+
+	<h2 class="c-Posts-header">Latest Notes</h2>
+
+	<ul class="o-listOfLinks">
+		{{#each toolkit.notes.recent}}
+
+			<li>
+				{{> note-teaser text=this.text tags=this.tags when=this.time}}
+			</li>
+
+		{{/each}}
+	</ul>
+
+	<a href="{{baseurl}}/pages/notes.html" class="c-Posts-allLink">All Notes</a>
+
+</div>

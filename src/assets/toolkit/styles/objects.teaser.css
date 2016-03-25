@@ -1,6 +1,6 @@
 @import "./variables";
 
-.teaser {
+.o-teaser {
   min-height: 2rem;
 
   &-link {
@@ -10,7 +10,7 @@
     max-width: 42em;
 
     &:hover {
-      .teaser-meta {
+      .o-teaser-meta {
         color: $grey;
       }
     }

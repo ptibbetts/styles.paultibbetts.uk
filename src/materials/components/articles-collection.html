@@ -2,10 +2,10 @@
 
 	<h3>{{this.year}}</h3>
 
-	<ul class="list-of-links">
+	<ul class="o-listOfLinks">
 		{{#each this.posts}}
 			<li>
-				{{> articles.teaser text=this.text tags=this.tags}}
+				{{> article-teaser text=this.text tags=this.tags}}
 			</li>
 		{{/each}}
 	</ul>

@@ -2,10 +2,10 @@
 
 	<h3>{{capitalise @key}}</h3>
 
-	<ul class="list-of-links">
+	<ul class="o-listOfLinks">
 		{{#each this}}
 			<li>
-				{{> notes.teaser text=this.text tags=this.tags when=this.time}}
+				{{> note-teaser text=this.text tags=this.tags when=this.time}}
 			</li>
 		{{/each}}
 	</ul>
