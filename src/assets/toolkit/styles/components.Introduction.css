@@ -1,0 +1,54 @@
+@import "./variables";
+
+@component c-Introduction {
+  background: $white;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5rem 0;
+  position: relative;
+  z-index: 2;
+
+  flex: 1 0 auto; /* sticky footer */
+
+  @descendent image {
+    border-radius: 100%;
+    min-width: 2rem;
+    max-width: 12rem;
+    width: 100%;
+  }
+
+  @descendent text {
+    flex: 2;
+    margin-left: auto;
+    flex-basis: 10em;
+    max-width: 25em;
+    padding-right: 1em;
+
+    .u-url {
+      color: inherit;
+      cursor: text;
+    }
+
+    h1 {
+      font-size: 1.1em;
+
+      @media (min-width: 31.25rem) {
+        font-size: 2em;
+      }
+
+    }
+
+    p a {
+      border-bottom: 1px solid $grey;
+      display: inline-block;
+
+      &:hover {
+        border-color: $grey;
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,23 @@
+@import "./variables";
+
+.c-Footer {
+  color: $light-grey;
+  font-size: 0.8em;
+  font-style: italic;
+  padding: 1rem 0;
+
+  &:hover {
+    color: $grey;
+  }
+
+  a {
+    color: inherit;
+    transition: color 150ms ease;
+
+    &:hover {
+      border-bottom: 1px solid $grey;
+    }
+
+  }
+
+}
