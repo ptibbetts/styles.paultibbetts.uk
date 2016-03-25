@@ -35,11 +35,11 @@
 
 	{{#if fabricator}}
 		</div>
-	<script src="{{baseurl}}/assets/fabricator/scripts/fabricator.js"></script>
+	<script src="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/fabricator/scripts/fabricator.js"></script>
 	{{/if}}
 
 	<!-- toolkit scripts -->
-	<script src="{{baseurl}}/assets/toolkit/scripts/toolkit.js"></script>
+	<script src="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/toolkit/scripts/toolkit.js"></script>
 	<!-- /toolkit scripts -->
 
 </body>
