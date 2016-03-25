@@ -8,15 +8,16 @@
 
 	<title>{{title}}</title>
 
-	{{#if fabricator}}<link rel="stylesheet" href="{{baseurl}}/assets/fabricator/styles/f.css">{{/if}}
+	{{#if fabricator}}<link rel="stylesheet" href="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/fabricator/styles/f.css">{{/if}}
 
 	<!-- toolkit styles -->
-	<link rel="stylesheet" href="{{baseurl}}/assets/toolkit/styles/generic.css">
-	<link rel="stylesheet" href="{{baseurl}}/assets/toolkit/styles/base.css">
-	<link rel="stylesheet" href="{{baseurl}}/assets/toolkit/styles/objects.css">
-	<link rel="stylesheet" href="{{baseurl}}/assets/toolkit/styles/components.css">
-	<link rel="stylesheet" href="{{baseurl}}/assets/toolkit/styles/utilities.css">
+	<link rel="stylesheet" href="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/toolkit/styles/generic.css">
+	<link rel="stylesheet" href="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/toolkit/styles/base.css">
+	<link rel="stylesheet" href="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/toolkit/styles/objects.css">
+	<link rel="stylesheet" href="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/toolkit/styles/components.css">
+	<link rel="stylesheet" href="{{#if baseurl}}{{ baseurl }}/{{/if}}assets/toolkit/styles/utilities.css">
 	<!-- /toolkit styles -->
+
 
 </head>
 <body>
