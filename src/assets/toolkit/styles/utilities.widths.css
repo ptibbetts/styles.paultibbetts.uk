@@ -21,10 +21,19 @@
 		width: 50%;
 	}
 
-	&-3\/5,
-	&-2\/3 {
+	&-3\/5 {
 		flex-basis: auto !important;
 		width: 60%;
+	}
+
+	&-2\/3 {
+		flex-basis: auto !important;
+		width: 66%;
+	}
+
+	&-7\/10 {
+		flex-basis: auto !important;
+		width: 70%;
 	}
 
 	&-3\/4 {
