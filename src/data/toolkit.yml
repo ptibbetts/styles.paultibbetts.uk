@@ -37,7 +37,7 @@ articles:
         time: "3 days ago"
       three:
         text: "Homebrew Website Club Birmingham"
-        tags: ["hbwcb", "meetup"]
+        tags: ["hbwcb", "meetup", "birmingham"]
         time: "about 1 week ago"
       four:
         text: "30DWC"
@@ -61,7 +61,7 @@ articles:
           time: "16/05/2016"
         three:
           text: "Homebrew Website Club Birmingham"
-          tags: ["hbwcb", "meetup"]
+          tags: ["hbwcb", "meetup", "birmingham"]
           time: "04/04/2016"
         four:
           text: "Now online at paultibbetts.uk"

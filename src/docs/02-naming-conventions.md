@@ -58,8 +58,6 @@ Scopes are prefixed with a s- and are written using camelCase.
 
 They are similar to themes however they are used for scoping particular styles to a particular part of the site.
 
-They are similar to themes however they are used for scoping particular styles to a particular part of the site.
-
 An example of this may be a WYSIWYG editor, as [it's easier to change the styles on the scope than in the content](https://css-tricks.com/class-up-templates-not-content).
 
 
