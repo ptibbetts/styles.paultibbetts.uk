@@ -1,7 +1,7 @@
 # Change Log
 This project attempts to stick to [Semantic Versioning](http://semver.org/).
 
-## Unreleased
+## 2.0.1 2016-03-27
 
 ### Fixed
 - homepage in package.json now uses https
@@ -9,9 +9,11 @@ This project attempts to stick to [Semantic Versioning](http://semver.org/).
 
 ### Modified
 - content in toolkit.yml
+- reworded introduction
 
 ### Removed
 - unused files
+- commented out code
 - brand component
 
 ## 2.0.0 2016-03-25
