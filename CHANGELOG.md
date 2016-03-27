@@ -1,6 +1,19 @@
 # Change Log
 This project attempts to stick to [Semantic Versioning](http://semver.org/).
 
+## Unreleased
+
+### Fixed
+- homepage in package.json now uses https
+- cleaned code for introduction
+
+### Modified
+- content in toolkit.yml
+
+### Removed
+- unused files
+- brand component
+
 ## 2.0.0 2016-03-25
 
 Version 2 of the style guide uses the rules from Coat Hanger, and so class names have changed.
