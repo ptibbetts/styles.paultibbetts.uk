@@ -1,6 +1,11 @@
 # Change Log
 This project attempts to stick to [Semantic Versioning](http://semver.org/).
 
+## 2.1.0 2016-06-24
+### Changed
+- changed container size from 42rem to 45rem - new job title fits better
+- commented out nestedProps PostCSS plugin, was breaking build
+
 ## 2.0.0 2016-03-25
 
 Version 2 of the style guide uses the rules from Coat Hanger, and so class names have changed.
@@ -8,7 +13,7 @@ See the docs for more details.
 
 ### Added
 - added Coat Hanger
-  - adds, base, generic, utilities layers
+  - adds base, generic, utilities layers
   - adds namespaces
 - added docs
 - added Signature component
