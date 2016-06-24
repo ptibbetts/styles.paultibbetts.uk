@@ -46,7 +46,7 @@ var config = {
 		},
 		styles: {
 			fabricator: 'src/assets/fabricator/styles/fabricator.scss',
-			toolkit: 'src/assets/toolkit/styles/{generic,base,objects,components,utilities,}.css'
+			toolkit: 'src/assets/toolkit/styles/{generic,base,objects,components,utilities}.css'
 		},
 		images: 'src/assets/toolkit/images/**/*',
 		views: 'src/toolkit/views/*.html'
@@ -102,7 +102,7 @@ gulp.task('styles:toolkit', function () {
 		cssVariables,
 		precss,
 		currentSelector,
-		nestedProps,
+		// nestedProps, // breaks
 		prefix,
 		cssMQPacker,
 		cssnano,
