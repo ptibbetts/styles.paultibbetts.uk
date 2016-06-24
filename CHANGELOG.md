@@ -1,8 +1,13 @@
 # Change Log
 This project attempts to stick to [Semantic Versioning](http://semver.org/).
 
-## 2.0.1 2016-03-27
+## 2.1.0 2016-06-24
+### Changed
+- changed container size from 42rem to 45rem - new job title fits better
+- commented out nestedProps PostCSS plugin, was breaking build
 
+
+## 2.0.1 2016-03-27
 ### Fixed
 - homepage in package.json now uses https
 - cleaned code for introduction
@@ -23,7 +28,7 @@ See the docs for more details.
 
 ### Added
 - added Coat Hanger
-  - adds, base, generic, utilities layers
+  - adds base, generic, utilities layers
   - adds namespaces
 - added docs
 - added Signature component
