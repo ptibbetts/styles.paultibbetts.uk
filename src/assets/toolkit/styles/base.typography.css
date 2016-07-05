@@ -21,3 +21,8 @@ p {
     }
   }
 }
+
+blockquote {
+    border-left: 2px solid $light-grey;
+    padding-left: 1em;
+}
