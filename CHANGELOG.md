@@ -1,6 +1,9 @@
 # Change Log
 This project attempts to stick to [Semantic Versioning](http://semver.org/).
 
+## 2.2.2 2016-07-04
+Since leftpad you can't publish over your own release of something on NPM
+
 ## 2.2.1 2016.07-04 (moments later)
 ## Fixes
 - adds `height:auto` to all images (in case they have a set height on them you want to ignore)
