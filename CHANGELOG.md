@@ -1,7 +1,14 @@
 # Change Log
 This project attempts to stick to [Semantic Versioning](http://semver.org/).
 
-## 2.1.0 2016-06-24
+## 2.0.3 2016-07-04
+### Fixes
+- removes `max-width:none` from images with a height or width set as WP adds to all regardless
+
+## 2.0.2 2016-06-24
+### Added
+- adds blockquote styles
+
 ### Changed
 - changed container size from 42rem to 45rem - new job title fits better
 - commented out nestedProps PostCSS plugin, was breaking build
