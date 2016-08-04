@@ -1,6 +1,10 @@
 # Change Log
 This project attempts to stick to [Semantic Versioning](http://semver.org/).
 
+## 2.2.1 2016.07-04 (moments later)
+## Fixes
+- adds `height:auto` to all images (in case they have a set height on them you want to ignore)
+
 ## 2.0.3 2016-07-04
 ### Fixes
 - removes `max-width:none` from images with a height or width set as WP adds to all regardless
