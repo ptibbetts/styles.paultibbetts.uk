@@ -2,4 +2,8 @@ node_modules
 dist
 
 !dist/assets/toolkit/scripts/toolkit.js
-!dist/assets/toolkit/styles/toolkit.css
+!dist/assets/toolkit/styles/base.css
+!dist/assets/toolkit/styles/components.css
+!dist/assets/toolkit/styles/generic.css
+!dist/assets/toolkit/styles/objects.css
+!dist/assets/toolkit/styles/utilities.css
