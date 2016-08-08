@@ -7,12 +7,15 @@
     .c-Posts--recent & {
       color: $dark-grey;
       font-size: 0.75em;
+      text-align: center;
       text-transform: uppercase;
     }
   }
 
   @descendent allLink {
     color: $light-grey;
+    display: block;
+    text-align: center;
 
     &:hover {
       color: $grey;
@@ -31,10 +34,12 @@
     padding-top: 1rem;
 
     a {
-      color: inherit;
+        border-bottom: 1px solid transparent;
+        display: inline-block;
+        color: inherit;
 
       &:hover {
-        border-bottom: 1px solid darken($white, 10);
+        border-bottom: 1px solid darken($white, 0.1);
       }
     }
 

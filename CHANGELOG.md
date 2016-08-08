@@ -1,6 +1,15 @@
 # Change Log
 This project attempts to stick to [Semantic Versioning](http://semver.org/).
 
+## 2.3.0 2016-08-08
+### Added
+- figure styles
+- demo for full notes in recent notes
+- colour converter function to PostCSS
+
+### Changes
+- post styles to look better centered
+
 ## 2.2.2 2016-07-04
 Since leftpad you can't publish over your own release of something on NPM
 
@@ -16,10 +25,10 @@ Since leftpad you can't publish over your own release of something on NPM
 ### Added
 - adds blockquote styles
 
+## 2.1.0 2016-06-24
 ### Changed
 - changed container size from 42rem to 45rem - new job title fits better
 - commented out nestedProps PostCSS plugin, was breaking build
-
 
 ## 2.0.1 2016-03-27
 ### Fixed

@@ -7,6 +7,7 @@ var atImport = require('postcss-easy-import');
 var atRoot = require('postcss-atroot');
 var bemAtRules = require('postcss-bem');
 var browserSync = require('browser-sync');
+var color = require('css-color-converter');
 var colorguard = require('colorguard');
 var cssMQPacker = require('css-mqpacker');
 var cssnano = require('cssnano');
@@ -34,6 +35,7 @@ var stylelint = require('stylelint');
 var suitAtRules = require('postcss-bem');
 var syntax = require('postcss-scss');
 var webpack = require('webpack');
+
 
 // configuration
 var config = {
@@ -91,6 +93,19 @@ gulp.task('styles:toolkit', function () {
 		clearMessages: true
 	};
 
+	var functions = require('postcss-functions')({
+	    functions: {
+	        darken: function (value, frac) {
+	           var darken = 1 - parseFloat(frac);
+	           var rgba = color(value).toRgbaArray();
+	           var r = rgba[0] * darken;
+	           var g = rgba[1] * darken;
+	           var b = rgba[2] * darken;
+	           return color([r,g,b]).toHexString();
+	        }
+	    }
+	});
+
 	var processors = [
 		atImport({
 			prefix: ''
@@ -100,6 +115,7 @@ gulp.task('styles:toolkit', function () {
 		bemAtRules,
 		atRoot,
 		cssVariables,
+		functions,
 		precss,
 		currentSelector,
 		// nestedProps, // breaks
