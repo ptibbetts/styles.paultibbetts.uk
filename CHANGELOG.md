@@ -1,6 +1,10 @@
 # Change Log
 This project attempts to stick to [Semantic Versioning](http://semver.org/).
 
+## 2.3.1 2016-08-08
+## Changes
+- removes border-top from post meta
+
 ## 2.3.0 2016-08-08
 ### Added
 - figure styles
