@@ -1,6 +1,19 @@
 # Change Log
 This project attempts to stick to [Semantic Versioning](http://semver.org/).
 
+## 2.3.0 2016-08-08
+### Added
+- figure styles
+- demo for full notes in recent notes
+- colour converter function to PostCSS
+
+### Changes
+- post styles to look better centered
+
+## 2.2.x 2016-08-04
+### Version bump
+- I messed something up and NPM doesn't allow you to overwrite releases since that leftpad thing
+
 ## 2.1.0 2016-06-24
 ### Changed
 - changed container size from 42rem to 45rem - new job title fits better
