@@ -1,6 +1,10 @@
 # Change Log
 This project attempts to stick to [Semantic Versioning](http://semver.org/).
 
+## 2.3.2 2016-09-17
+## Fixes
+- fixes links breaking responsive design by adding word-wrap:break-word to all links
+
 ## 2.3.1 2016-08-08
 ## Changes
 - removes border-top from post meta
